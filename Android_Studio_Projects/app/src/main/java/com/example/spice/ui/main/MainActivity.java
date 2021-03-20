@@ -1,4 +1,4 @@
-package com.example.spice;
+package com.example.spice.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.spice.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
