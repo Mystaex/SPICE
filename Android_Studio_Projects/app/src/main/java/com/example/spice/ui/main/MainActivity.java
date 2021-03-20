@@ -2,14 +2,20 @@ package com.example.spice.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.spice.R;
+import com.example.spice.ui.audio_submission.AudioFragment;
+import com.example.spice.ui.graphs.GraphsFragment;
+import com.example.spice.ui.profile.ProfileFragment;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -25,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        toolbar.setTitle(getString(R.string.main_label));
+
         item1 = findViewById(R.id.item1);
         item2 = findViewById(R.id.item2);
         item3 = findViewById(R.id.item3);
@@ -38,30 +46,84 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    protected void onStart() {
+        super.onStart();
+
+        setFragment(AudioFragment.newInstance());
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
+    @Override
     public void onClick(View view)
     {
         if(view.getId() == R.id.item1)
         {
             select.animate().x(0).setDuration(100);
-            item1.setTextColor(Color.WHITE);
+            item1.setTextColor(Color.BLACK);
             item2.setTextColor(def);
             item3.setTextColor(def);
+
+            setFragment(AudioFragment.newInstance());
+
         }
         else if(view.getId() == R.id.item2)
         {
             item1.setTextColor(def);
-            item2.setTextColor(Color.WHITE);
+            item2.setTextColor(Color.BLACK);
             item3.setTextColor(def);
             int size = item2.getWidth();
             select.animate().x(size).setDuration(100);
+
+            setFragment(GraphsFragment.newInstance());
         }
         else if(view.getId() == R.id.item3)
         {
             item1.setTextColor(def);
             item2.setTextColor(def);
-            item3.setTextColor(Color.WHITE);
+            item3.setTextColor(Color.BLACK);
             int size = item2.getWidth() * 2;
             select.animate().x(size).setDuration(100);
+
+            setFragment(ProfileFragment.newInstance());
+
         }
+    }
+
+    private void setFragment(Fragment fragment){
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.base_container,fragment)
+                .commit();
+
     }
 }

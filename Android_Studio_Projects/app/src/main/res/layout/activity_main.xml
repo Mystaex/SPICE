@@ -10,13 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.SPICE"
-        android:layout_marginTop="28dp">
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:id="@+id/toolbar"
-            android:background="?attr/colorPrimary"
+            android:background="@android:color/darker_gray"
             android:theme="@style/Theme.SPICE"/>
 
     </com.google.android.material.appbar.AppBarLayout>
