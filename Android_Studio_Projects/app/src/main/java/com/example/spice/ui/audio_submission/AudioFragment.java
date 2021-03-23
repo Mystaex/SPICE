@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.spice.R;
 
@@ -32,6 +34,40 @@ public class AudioFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_audio, container, false);
+        View v = inflater.inflate(R.layout.fragment_audio, container, false);
+
+        Button btnRecord = v.findViewById(R.id.btnRecord);
+        Button btnPlay = v.findViewById(R.id.btnPlay);
+        Button btnDelete = v.findViewById(R.id.btnDelete);
+        Button btnSubmit = v.findViewById(R.id.btnSubmit);
+
+        btnRecord.setOnClickListener(v1 -> { record(); });
+        btnPlay.setOnClickListener(v1 -> { play(); });
+        btnDelete.setOnClickListener(v1 -> { delete(); });
+        btnSubmit.setOnClickListener(v1 -> { submit(); });
+
+
+
+        return v;
+    }
+
+    private void record(){
+        //: Implement Record functionality
+        Toast.makeText(requireContext(), "Record function", Toast.LENGTH_SHORT).show();
+
+    }
+    private void play(){
+        //: Implement Play functionality
+        Toast.makeText(requireContext(), "Play function", Toast.LENGTH_SHORT).show();
+    }
+    private void delete(){
+        //: Implement Delete functionality
+        Toast.makeText(requireContext(), "Delete function", Toast.LENGTH_SHORT).show();
+
+    }
+    private void submit(){
+        //: Implement Submit functionality
+        Toast.makeText(requireContext(), "Submit function", Toast.LENGTH_SHORT).show();
+
     }
 }
