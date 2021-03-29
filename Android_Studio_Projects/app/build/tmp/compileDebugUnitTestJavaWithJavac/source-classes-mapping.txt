@@ -1,0 +1,2 @@
+com/example/spice/ExampleUnitTest.java
+ com.example.spice.ExampleUnitTest
