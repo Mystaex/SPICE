@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,8 +19,7 @@ import com.example.spice.ui.graphs.GraphsFragment;
 import com.example.spice.ui.profile.ProfileFragment;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener
-{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener {
     ColorStateList def;
     TextView item1, item2, item3, select;
 
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         toolbar.setTitle(getString(R.string.main_label));
 
+
+        toolbar.setOnMenuItemClickListener(this);
+        toolbar.inflateMenu(R.menu.menu_options);
+
         item1 = findViewById(R.id.item1);
         item2 = findViewById(R.id.item2);
         item3 = findViewById(R.id.item3);
@@ -46,12 +51,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_options, menu);
+        return true;
+    }
+
+    @Override
     protected void onStart() {
         super.onStart();
 
         setFragment(AudioFragment.newInstance());
 
     }
+
 
     @Override
     protected void onResume() {
@@ -125,5 +137,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .replace(R.id.base_container,fragment)
                 .commit();
 
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        //Listen when is calling logout
+        if (item.getItemId() == R.id.item_logout){
+            //implements functionality when is logout
+            finish(); // Terminates activity
+        }
+        return true;
     }
 }
