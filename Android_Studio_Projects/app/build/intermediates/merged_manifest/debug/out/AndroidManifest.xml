@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppCompatTheme" >
+        <activity android:name="com.example.spice.ui.profile.ChangePassword" />
         <activity android:name="com.example.spice.ui.profile.ManageAccount" />
         <activity android:name="com.example.spice.ui.login.Signup" />
         <activity android:name="com.example.spice.ui.login.login" >

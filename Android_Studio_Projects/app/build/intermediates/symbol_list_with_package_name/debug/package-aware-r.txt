@@ -1718,6 +1718,7 @@ drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_clock_black_24dp
+drawable ic_edit
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1856,7 +1857,10 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnChangePassword
 id btnDelete
+id btnEdit
+id btnLogout
 id btnPlay
 id btnRecord
 id btnSubmit
@@ -1869,6 +1873,12 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id change_back_submit
+id change_confirm
+id change_old
+id change_password
+id change_submit
+id change_title
 id checkbox
 id checked
 id chip
@@ -1981,6 +1991,7 @@ id italic
 id item1
 id item2
 id item3
+id item_logout
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -2081,7 +2092,6 @@ id percent
 id pin
 id position
 id postLayout
-id profile_fragment_construction
 id progress_circular
 id progress_horizontal
 id radio
@@ -2282,6 +2292,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_change_password
 layout activity_login
 layout activity_main
 layout activity_manage_account
@@ -2381,6 +2392,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_options
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
