@@ -40,18 +40,18 @@ public class AudioFragment extends Fragment {
     MediaRecorder mediaRecorder;
     MediaPlayer mediaPlayer;
 
-    private int PERMISSION_CODE = 1;
-    private int minimumTimeMS = 5000;
+    private int PERMISSION_CODE = 1;        //Random positive integer meaning permission granted
+    private long minimumTimeMS = 5000;      //Minimum length in ms of recorded audio
 
-    boolean recording = false;
-    boolean playing = false;
+    boolean recording = false;              //Decider of recording button switch
+    boolean playing = false;                //Decider of playing button switch
     Button btnRecord;
     Button btnPlay;
     Button btnSubmit;
 
-    private Chronometer timer;
+    private Chronometer timer;              //Recording timer
 
-    public static String filename = "audio.mp3";
+    public static String filename = "audio.mp3";        //Audio file will always be audio.mp3
 
 
 
@@ -72,22 +72,25 @@ public class AudioFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_audio, container, false);
 
-        mediaRecorder = new MediaRecorder();
-
         btnRecord = v.findViewById(R.id.btnRecord);
         btnPlay = v.findViewById(R.id.btnPlay);
         btnSubmit = v.findViewById(R.id.btnSubmit);
         timer = v.findViewById(R.id.audioTimer);
 
+
+        //Record button case
         btnRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                //Switch to implement 2 functions in 1 button
                 if(!recording){
                     recording = true;
                     btnRecord.setText("Stop");
                     record();
                 }
                 else{
+                    //Minimum recording time is currently 5 seconds
+                    //If the recording isn't 5 seconds long, let them know.
                     long recordTime = SystemClock.elapsedRealtime() - timer.getBase();
                     if(recordTime >= minimumTimeMS){
                         recording = false;
@@ -101,15 +104,18 @@ public class AudioFragment extends Fragment {
 
             }
         });
+        //Play button case
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)throws IllegalArgumentException, SecurityException, IllegalStateException {
+                //Switch to implement 2 functions in 1 button
                 if(!playing){
                     playing = true;
                     btnPlay.setText("Stop");
                     play();
                 }
                 else{
+                    //playing set and setText are in stopPlay() so that submit() can access.
                     stopPlay();
                 }
             }
@@ -123,7 +129,7 @@ public class AudioFragment extends Fragment {
         return v;
     }
 
-
+    //All necessary settings for the mediarecorder
     public void setupMediaRecorder(){
         String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath();
         mediaRecorder=new MediaRecorder();
@@ -135,6 +141,7 @@ public class AudioFragment extends Fragment {
         mediaRecorder.setOutputFile(filepath + "/" + filename);
     }
 
+    //Function that checks permissions for recording audio, and if not granted, requests them
     public boolean permission() {
         if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
             return true;
@@ -145,8 +152,9 @@ public class AudioFragment extends Fragment {
         }
     }
 
+    //Function that implements the record functionality
     private void record(){
-        //: Implement Record functionality
+        //Starting of timer
         timer.setBase(SystemClock.elapsedRealtime());
         timer.start();
 
@@ -166,11 +174,11 @@ public class AudioFragment extends Fragment {
             }
 
             mediaRecorder.start();
-            //Toast.makeText(requireContext(), "Recording", Toast.LENGTH_SHORT).show();
         }
     }
+
+    //Function that implements the play audio functionality
     private void play(){
-        //: Implement Play functionality
         String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath();
 
         mediaPlayer = new MediaPlayer();
@@ -182,11 +190,10 @@ public class AudioFragment extends Fragment {
         }
 
         mediaPlayer.start();
-        //Toast.makeText(getActivity(), "Playing", Toast.LENGTH_LONG).show();
     }
 
+    //Functions that implements the functionality to stop recording audio
     private void stopRecord(){
-        //: Implement Delete functionality
         timer.stop();
 
         if(mediaRecorder != null){
@@ -195,12 +202,11 @@ public class AudioFragment extends Fragment {
             mediaRecorder = null;
             btnPlay.setEnabled(true);
             btnSubmit.setEnabled(true);
-            //Toast.makeText(requireContext(), "Recording Completed", Toast.LENGTH_SHORT).show();
         }
     }
 
+    //Function that implements the functionality to stop the audio being played
     private void stopPlay(){
-
         playing = false;
         btnPlay.setText("Play");
         if(mediaPlayer != null){
@@ -211,10 +217,10 @@ public class AudioFragment extends Fragment {
     }
 
     private void submit(){
-        //: Implement Submit functionality
         if(playing){
             stopPlay();
         }
+        //: Implement Submit functionality
         Toast.makeText(requireContext(), "Submit function", Toast.LENGTH_SHORT).show();
     }
 
