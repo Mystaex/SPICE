@@ -11,11 +11,13 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.os.Environment;
+import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.Toast;
 
 import com.example.spice.R;
@@ -38,16 +40,16 @@ public class AudioFragment extends Fragment {
     MediaRecorder mediaRecorder;
     MediaPlayer mediaPlayer;
 
-    private int PERMISSION_CODE = 10;
+    private int PERMISSION_CODE = 1;
+    private int minimumTimeMS = 5000;
 
-    int recorded = 0;
-    int recording = 0;
+    boolean recording = false;
+    boolean playing = false;
     Button btnRecord;
     Button btnPlay;
-    Button btnDelete;
     Button btnSubmit;
 
-    public static final int RequestPermissionCode = 1;
+    private Chronometer timer;
 
     public static String filename = "audio.mp3";
 
@@ -74,79 +76,48 @@ public class AudioFragment extends Fragment {
 
         btnRecord = v.findViewById(R.id.btnRecord);
         btnPlay = v.findViewById(R.id.btnPlay);
-        btnDelete = v.findViewById(R.id.btnDelete);
         btnSubmit = v.findViewById(R.id.btnSubmit);
+        timer = v.findViewById(R.id.audioTimer);
 
         btnRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
-                if(permission()){
-                    setupMediaRecorder();
-
-                    try{
-                        mediaRecorder.prepare();
-                    }
-                    catch(IllegalStateException e){
-                        e.printStackTrace();
-                    }
-                    catch(IOException e){
-                        e.printStackTrace();
-                    }
-
-                    mediaRecorder.start();
-                    Toast.makeText(requireContext(), "Record!! Start function", Toast.LENGTH_SHORT).show();
-                    btnDelete.setEnabled(true);
-                    btnRecord.setEnabled(false);
+                if(!recording){
+                    recording = true;
+                    btnRecord.setText("Stop");
+                    record();
                 }
                 else{
-                    requestPermission();
+                    long recordTime = SystemClock.elapsedRealtime() - timer.getBase();
+                    if(recordTime >= minimumTimeMS){
+                        recording = false;
+                        btnRecord.setText("Record");
+                        stopRecord();
+                    }
+                    else{
+                        Toast.makeText(requireContext(), "Recording needs 5 seconds minimum" , Toast.LENGTH_SHORT).show();
+                    }
                 }
+
             }
         });
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)throws IllegalArgumentException,
-                        SecurityException, IllegalStateException {
-
-                    btnDelete.setEnabled(false);
-                    String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath();
-
-                    mediaPlayer = new MediaPlayer();
-                    try {
-                        mediaPlayer.setDataSource(filepath + "/" + filename);
-                        mediaPlayer.prepare();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-
-                    mediaPlayer.start();
-                    Toast.makeText(getActivity(), "Recording Playing",
-                            Toast.LENGTH_LONG).show();
-            }
-        });
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                if(mediaRecorder != null){
-                    try{
-                        mediaRecorder.stop();
-                    }
-                    catch(IllegalStateException e){
-                        e.printStackTrace();
-                    }
-                    mediaRecorder.release();
-                    mediaRecorder = null;
-                    btnDelete.setEnabled(false);
-                    btnRecord.setEnabled(true);
-                    btnPlay.setEnabled(true);
-                    Toast.makeText(requireContext(), "Recording Completed", Toast.LENGTH_SHORT).show();
+            public void onClick(View view)throws IllegalArgumentException, SecurityException, IllegalStateException {
+                if(!playing){
+                    playing = true;
+                    btnPlay.setText("Stop");
+                    play();
+                }
+                else{
+                    stopPlay();
                 }
             }
         });
+
         btnSubmit.setOnClickListener(v1 -> { submit(); });
 
         btnSubmit.setEnabled(false);
-        btnDelete.setEnabled(false);
         btnPlay.setEnabled(false);
 
         return v;
@@ -164,32 +135,6 @@ public class AudioFragment extends Fragment {
         mediaRecorder.setOutputFile(filepath + "/" + filename);
     }
 
-    private void requestPermission() {
-        ActivityCompat.requestPermissions(getActivity(), new
-                String[]{WRITE_EXTERNAL_STORAGE, RECORD_AUDIO}, RequestPermissionCode);
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case RequestPermissionCode:
-                if (grantResults.length> 0) {
-                    boolean StoragePermission = grantResults[0] ==
-                            PackageManager.PERMISSION_GRANTED;
-                    boolean RecordPermission = grantResults[1] ==
-                            PackageManager.PERMISSION_GRANTED;
-
-                    if (StoragePermission && RecordPermission) {
-                        Toast.makeText(getActivity(), "Permission Granted",
-                                Toast.LENGTH_LONG).show();
-                    } else {
-                        Toast.makeText(getActivity(),"Permission Denied",Toast.LENGTH_LONG).show();
-                    }
-                }
-                break;
-        }
-    }
-
     public boolean permission() {
         if(ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED){
             return true;
@@ -200,34 +145,77 @@ public class AudioFragment extends Fragment {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
     private void record(){
         //: Implement Record functionality
-        Toast.makeText(requireContext(), "Record Start function", Toast.LENGTH_SHORT).show();
+        timer.setBase(SystemClock.elapsedRealtime());
+        timer.start();
+
+        if(permission()){
+            setupMediaRecorder();
+            btnPlay.setEnabled(false);
+            btnSubmit.setEnabled(false);
+
+            try{
+                mediaRecorder.prepare();
+            }
+            catch(IllegalStateException e){
+                e.printStackTrace();
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+
+            mediaRecorder.start();
+            //Toast.makeText(requireContext(), "Recording", Toast.LENGTH_SHORT).show();
+        }
     }
     private void play(){
         //: Implement Play functionality
-        Toast.makeText(requireContext(), "Play function", Toast.LENGTH_SHORT).show();
-    }
-    private void delete(){
-        //: Implement Delete functionality
-        Toast.makeText(requireContext(), "Delete function", Toast.LENGTH_SHORT).show();
+        String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath();
 
+        mediaPlayer = new MediaPlayer();
+        try {
+            mediaPlayer.setDataSource(filepath + "/" + filename);
+            mediaPlayer.prepare();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        mediaPlayer.start();
+        //Toast.makeText(getActivity(), "Playing", Toast.LENGTH_LONG).show();
     }
+
+    private void stopRecord(){
+        //: Implement Delete functionality
+        timer.stop();
+
+        if(mediaRecorder != null){
+            mediaRecorder.stop();
+            mediaRecorder.release();
+            mediaRecorder = null;
+            btnPlay.setEnabled(true);
+            btnSubmit.setEnabled(true);
+            //Toast.makeText(requireContext(), "Recording Completed", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void stopPlay(){
+
+        playing = false;
+        btnPlay.setText("Play");
+        if(mediaPlayer != null){
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
+
     private void submit(){
         //: Implement Submit functionality
+        if(playing){
+            stopPlay();
+        }
         Toast.makeText(requireContext(), "Submit function", Toast.LENGTH_SHORT).show();
-
     }
 
 }

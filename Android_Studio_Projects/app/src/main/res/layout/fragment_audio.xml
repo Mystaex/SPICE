@@ -6,20 +6,32 @@
     android:layout_height="match_parent">
 
     <!-- Record button  -->
+
+    <!-- Play button  -->
+
+    <Chronometer
+        android:id="@+id/audioTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecord"
+        app:layout_constraintEnd_toEndOf="@+id/btnRecord"
+        app:layout_constraintStart_toStartOf="@+id/btnRecord" />
+
     <Button
         android:id="@+id/btnRecord"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="288dp"
         android:drawableStart="@drawable/ic_record"
+        android:drawableLeft="@drawable/ic_record"
         android:text="Record"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:drawableLeft="@drawable/ic_record" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Play button  -->
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="150dp"
@@ -35,18 +47,6 @@
         />
 
     <!-- Delete button  -->
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="DELETE"
-        android:drawableStart="@drawable/ic_remove"
-        app:icon="@drawable/ic_remove"
-        app:layout_constraintEnd_toEndOf="@+id/btnPlay"
-        app:layout_constraintStart_toStartOf="@+id/btnPlay"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlay"
-        android:drawableLeft="@drawable/ic_remove" />
 
     <!-- Submit button  -->
     <Button
@@ -54,11 +54,11 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="SUBMIT"
         android:drawableStart="@drawable/ic_submit"
-        app:layout_constraintEnd_toEndOf="@+id/btnDelete"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/btnDelete"
-        app:layout_constraintTop_toBottomOf="@+id/btnDelete"
-        android:drawableLeft="@drawable/ic_submit" />
+        android:drawableLeft="@drawable/ic_submit"
+        android:text="SUBMIT"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlay"
+        app:layout_constraintStart_toStartOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
