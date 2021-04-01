@@ -56,20 +56,16 @@ public class ProfileFragment extends Fragment {
         Button btnChangePassword = v.findViewById(R.id.btnChangePassword);
 
         btnChangePassword.setOnClickListener(v1 -> {
-
             startActivity(new Intent(getActivity(), ChangePassword.class));
-            // Implement edit information functionality
         });
 
         btnLogout.setOnClickListener(v1 -> {
             FirebaseAuth.getInstance().signOut();
-            startActivity(new Intent(getActivity(), login.class));
-            // Implement edit information functionality
+            getActivity().finish();
         });
 
         btnEdit.setOnClickListener(v1 -> {
             startActivity(new Intent(getActivity(), ManageAccount.class));
-            // Implement edit information functionality
         });
         return v;
     }

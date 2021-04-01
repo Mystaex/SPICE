@@ -13,29 +13,39 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.spice.R;
-import com.example.spice.ui.login.Signup;
-import com.example.spice.ui.login.login;
+import com.example.spice.ui.login.Member;
 import com.example.spice.ui.main.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 
 // change password
 public class ChangePassword extends AppCompatActivity {
 
     EditText mPassword, mPasswordConfirm, mOld;
     Button changeBtn, backBtn;
+    FirebaseAuth auth;
+    String currentUserId;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    DatabaseReference ref;
+    String retrievedPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
         mOld = findViewById(R.id.change_old);
-        mPassword = findViewById(R.id.signup_password);
-        mPasswordConfirm = findViewById(R.id.signup_confirm);
+        mPassword = findViewById(R.id.change_password);
+        mPasswordConfirm = findViewById(R.id.change_confirm);
         changeBtn = findViewById(R.id.change_submit);
         backBtn = findViewById(R.id.change_back_submit);
 
@@ -57,11 +67,19 @@ public class ChangePassword extends AppCompatActivity {
 
                 //EMAIL EMPTY
                 if (TextUtils.isEmpty(oldpasswordValue)) {
-                    mOld.setError("Email is required");
+                    mOld.setError("Old password is required");
                     return;
                 }
                 if (oldpasswordValue.length() < 6) {
-                    mOld.setError("Email needs to be longer than 6 characters");
+                    mOld.setError("Old password needs to be longer than 6 characters");
+                }
+
+
+
+                //PASSWORD INCORRECT
+                if(!retrievedPassword.equals(passwordValue))
+                {
+                    mOld.setError("Password Incorrect");
                 }
 
                 //EMPTY PASSWORD
@@ -90,20 +108,29 @@ public class ChangePassword extends AppCompatActivity {
                     return;
                 }
 
-                /*
                 if(user!=null)
                 {
-                    user.updatePassword(passwordValue);
+                    user.updatePassword(passwordValue).addOnSuccessListener(new OnSuccessListener<Void>()
+                    {
+
+                        @Override
+                        public void onSuccess(Void aVoid)
+                        {
+                            FirebaseUser user = auth.getCurrentUser();
+                            currentUserId = user.getUid();
+                            ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId);
+                            ref.child("password").setValue(passwordValue);
+                        }
+                    });
                     Toast.makeText(ChangePassword.this, "Successfully change Password", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(getApplicationContext(), login.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 }
                 else
                 {
                     Toast.makeText(ChangePassword.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                 }
-                */
             }
         });
-        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
+
 }

@@ -24,6 +24,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Signup extends AppCompatActivity {
     private static final String TAG = "EmailPassword";
@@ -31,13 +36,11 @@ public class Signup extends AppCompatActivity {
     EditText mEmail, mPassword, mPasswordConfirm, mGenre;
     Button signupBtn, backBtn;
 
-    private FirebaseAuth auth;
-
     //initializing database
+    private FirebaseAuth auth;
     DatabaseReference ref;
     String currentUserId;
     Member member;
-    //---long maxid;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,19 +56,7 @@ public class Signup extends AppCompatActivity {
         backBtn = findViewById(R.id.signup_back_submit);
 
         auth = FirebaseAuth.getInstance();
-        //---ref = FirebaseDatabase.getInstance().getReference().child("Member");
-        //---member = new Member();
 
-        /*---
-        @Override
-        public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-        {
-            if(dataSnapshot.exists())
-            {
-                maxid = (dataSnapshot.getChildrenCount());
-            }
-        }
-         ---*/
         //BACK BUTTON CLICKED
         backBtn.setOnClickListener(new View.OnClickListener()
         {
@@ -137,11 +128,6 @@ public class Signup extends AppCompatActivity {
                 }
 
                 createAccount(emailValue,passwordValue, genreValue);
-                //---member.setemail(emailValue);
-                //---member.setpassword(passwordValue);
-                //---member.setgenre(genreValue);
-                //---ref.push().setValue(member);
-                //---ref.child(String.valueOf(maxid+1)).setValue(member);
             }
         });
     }
@@ -158,8 +144,10 @@ public class Signup extends AppCompatActivity {
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = auth.getCurrentUser();
                             currentUserId = user.getUid();
-                            member.setuserid(currentUserId);
                             member.setgenre(genre);
+                            member.setpassword(password);
+                            member.setemail(email);
+                            member.setuserid(currentUserId);
                             ref = FirebaseDatabase.getInstance().getReference().child("Member");
                             ref.child(currentUserId).setValue(member);
                             updateUI(user);
