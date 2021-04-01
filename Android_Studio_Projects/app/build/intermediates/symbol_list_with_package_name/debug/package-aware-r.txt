@@ -1845,6 +1845,7 @@ id animateToEnd
 id animateToStart
 id asConfigured
 id async
+id audioTimer
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -1858,7 +1859,6 @@ id blocking
 id bottom
 id bounce
 id btnChangePassword
-id btnDelete
 id btnEdit
 id btnLogout
 id btnPlay

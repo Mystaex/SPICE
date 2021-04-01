@@ -112,6 +112,12 @@ public class AudioFragment extends Fragment {
                     playing = true;
                     btnPlay.setText("Stop");
                     play();
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mediaPlayer) {
+                            stopPlay();
+                        }
+                    });
                 }
                 else{
                     //playing set and setText are in stopPlay() so that submit() can access.
@@ -152,11 +158,11 @@ public class AudioFragment extends Fragment {
     }
     //Function that implements the record functionality
     private void record(){
-        //Starting of timer
-        timer.setBase(SystemClock.elapsedRealtime());
-        timer.start();
 
         if(permission()){
+            //Starting of timer
+            timer.setBase(SystemClock.elapsedRealtime());
+            timer.start();
             setupMediaRecorder();
             btnPlay.setEnabled(false);
             btnSubmit.setEnabled(false);
