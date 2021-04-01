@@ -26,6 +26,7 @@
         android:layout_marginTop="288dp"
         android:drawableStart="@drawable/ic_record"
         android:drawableLeft="@drawable/ic_record"
+
         android:text="Record"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -46,8 +47,6 @@
 
         />
 
-    <!-- Delete button  -->
-
     <!-- Submit button  -->
     <Button
         android:id="@+id/btnSubmit"
@@ -60,5 +59,6 @@
         app:layout_constraintEnd_toEndOf="@+id/btnPlay"
         app:layout_constraintStart_toStartOf="@+id/btnPlay"
         app:layout_constraintTop_toBottomOf="@+id/btnPlay" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

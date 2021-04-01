@@ -1,18 +1,32 @@
 package com.example.spice.ui.profile;
 
+
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.spice.R;
+import com.example.spice.ui.login.Member;
+import com.example.spice.ui.login.login;
+import com.example.spice.ui.main.MainActivity;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
+//https://youtu.be/OhVQlU25ICw
 
 public class ProfileFragment extends Fragment {
-
 
     public ProfileFragment() {
         // Required empty public constructor
@@ -34,6 +48,26 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View v = inflater.inflate(R.layout.fragment_profile, container, false);
+
+        Button btnEdit = v.findViewById(R.id.btnEdit);
+
+        Button btnLogout = v.findViewById(R.id.btnLogout);
+
+        Button btnChangePassword = v.findViewById(R.id.btnChangePassword);
+
+        btnChangePassword.setOnClickListener(v1 -> {
+            startActivity(new Intent(getActivity(), ChangePassword.class));
+        });
+
+        btnLogout.setOnClickListener(v1 -> {
+            FirebaseAuth.getInstance().signOut();
+            getActivity().finish();
+        });
+
+        btnEdit.setOnClickListener(v1 -> {
+            startActivity(new Intent(getActivity(), ManageAccount.class));
+        });
+        return v;
     }
 }

@@ -1,0 +1,274 @@
+[
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_edit.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signup.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_signup.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\font_bungee.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\font\\bungee.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_graphs.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_contain_main.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\contain_main.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_manage_account.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_manage_account.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_tabs.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\drawable\\back_tabs.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_change_password.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_remove.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_remove.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_audio.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_audio.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_select.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\drawable\\back_select.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_edit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_edit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_play.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_play.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_submit.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_submit.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_options.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\menu\\menu_options.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_play.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_play.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_record.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_record.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_remove.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_record.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_record.png"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_submit.xml.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_submit.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Downloads\\SPICE-develop\\SPICE-develop\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    }
+]

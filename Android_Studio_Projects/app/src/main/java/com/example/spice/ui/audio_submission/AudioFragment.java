@@ -71,7 +71,6 @@ public class AudioFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_audio, container, false);
-
         btnRecord = v.findViewById(R.id.btnRecord);
         btnPlay = v.findViewById(R.id.btnPlay);
         btnSubmit = v.findViewById(R.id.btnSubmit);
@@ -151,7 +150,6 @@ public class AudioFragment extends Fragment {
             return false;
         }
     }
-
     //Function that implements the record functionality
     private void record(){
         //Starting of timer
