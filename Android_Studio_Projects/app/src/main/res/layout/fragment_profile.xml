@@ -6,6 +6,212 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
 
+    <ImageView
+        android:id="@+id/imgShape"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/blaze"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/ly_profileName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgShape">
+
+        <ImageView
+            android:id="@+id/img_profileName"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_person"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/tv_profileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Brenda Martinez"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_profileUtaId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_profileName">
+
+        <ImageView
+            android:id="@+id/img_profileUtaId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/blaze" />
+
+        <EditText
+            android:id="@+id/tv_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:layout_marginEnd="10dp"
+            android:enabled="false"
+            android:text="125479896325" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_profileProfession"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_profileUtaId">
+
+        <ImageView
+            android:id="@+id/img_profileProfession"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_profileProfession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:text="Data Scientis" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_profileFavoriteGenre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_profileProfession">
+
+        <ImageView
+            android:id="@+id/img_profileFavoriteGenre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_profileFavoriteGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:text="Rock" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_profileEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_profileFavoriteGenre">
+
+        <ImageView
+            android:id="@+id/img_profileEmailAddress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/tv_profileEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            tools:text="amia109@aol.com" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_profilePassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ly_profileEmailAddress">
+
+        <ImageView
+            android:id="@+id/img_profilePassword"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_person"
+            android:layout_weight="0"/>
+
+        <TextView
+            android:id="@+id/tv_profilePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            tools:text="Change Password"
+            android:layout_weight="8"/>
+
+        <ImageView
+            android:id="@+id/img_profileChangePassword"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_sync"
+            android:layout_weight="2"
+            />
+
+
+    </LinearLayout>
+
+
     <Button
         android:id="@+id/btnEdit"
         android:layout_width="200dp"
@@ -15,9 +221,16 @@
         android:layout_marginEnd="161dp"
         android:layout_marginRight="161dp"
         android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
         android:drawableRight="@drawable/ic_edit"
+        android:drawableTint="@color/white"
         android:text="Edit Information"
+        android:background="@drawable/shape_edit_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
