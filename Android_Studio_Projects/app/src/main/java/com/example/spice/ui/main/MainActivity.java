@@ -1,9 +1,11 @@
 package com.example.spice.ui.main;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -27,6 +29,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener {
+
     ColorStateList def;
     TextView item1, item2, item3, select;
 
@@ -132,7 +135,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
-
     private void setFragment(Fragment fragment) {
 
         getSupportFragmentManager()
@@ -155,7 +157,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         return true;
     }
-
-
-
 }

@@ -46,7 +46,6 @@ public class Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_signup);
-
         //initializing and connecting values to their respective text boxes.
         mEmail = findViewById(R.id.signup_email);
         mPassword = findViewById(R.id.signup_password);
