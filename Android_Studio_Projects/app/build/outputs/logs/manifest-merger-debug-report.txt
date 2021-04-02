@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\3db90da3881798b27a4efd5da0f436cd\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\cd6f2caba378d66250797e09d6bb24e0\material-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\1b47bb01ecc6aa52d262badcce0bb4ed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
@@ -64,37 +64,37 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\toona\.gradle\cache
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\1f6b045666a31134b82a56c243bf4255\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\e53fbbcf78ffb18c7cd795b35d4efb56\jetified-protolite-well-known-types-17.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\10a3513949333938587db48c8411373d\jetified-grpc-android-1.28.0\AndroidManifest.xml:2:1-13:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
 	package
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:3:5-32
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:3:5-32
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:1-39:12
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:5-80
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:22-78
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:5-71
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:22-68
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:22-68
 uses-permission#android.permission.STORAGE
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:22-63
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:22-63
 application
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:9:5-37:19
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:9:5-37:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\cd6f2caba378d66250797e09d6bb24e0\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\cd6f2caba378d66250797e09d6bb24e0\material-1.3.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\1b47bb01ecc6aa52d262badcce0bb4ed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
@@ -128,57 +128,57 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\to
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\f3d364c4591b4da0386e5d8846d9d728\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:15:9-46
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:15:9-46
 activity#com.example.spice.ui.profile.ChangePassword
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:9-72
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:9-72
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:19-60
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:19-60
 activity#com.example.spice.ui.profile.ManageAccount
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:9-62
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:9-62
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:19-59
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:19-59
 activity#com.example.spice.ui.login.Signup
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:9-53
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:9-53
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:19-50
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:19-50
 activity#com.example.spice.ui.login.login
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:9-25:20
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:19-49
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:19-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.example.spice.ui.main.MainActivity
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:26:9-32:20
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:26:19-55
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:26:19-55
 meta-data#preloaded_fonts
-ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:34:9-36:57
+ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:34:9-36:57
 	android:resource
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:36:13-54
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:36:13-54
 	android:name
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml:35:13-43
 uses-sdk
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\3db90da3881798b27a4efd5da0f436cd\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\3db90da3881798b27a4efd5da0f436cd\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\cd6f2caba378d66250797e09d6bb24e0\material-1.3.0\AndroidManifest.xml:20:5-44
@@ -299,16 +299,16 @@ MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] C:\Users\too
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.1] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\e53fbbcf78ffb18c7cd795b35d4efb56\jetified-protolite-well-known-types-17.1.1\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\10a3513949333938587db48c8411373d\jetified-grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\10a3513949333938587db48c8411373d\jetified-grpc-android-1.28.0\AndroidManifest.xml:7:5-9:41
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		ADDED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Downloads\SPICE-develop\SPICE-develop\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		ADDED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
+		INJECTED from D:\1Push\Android_Studio_Projects\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:12:9-18:19
 MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\toona\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:29:9-35:19

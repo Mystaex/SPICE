@@ -2,6 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/item_password"
+        android:title="Password"/>
+    <item
+        android:id="@+id/item_edit"
+        android:title="Edit Profile"/>
+    <item
         android:id="@+id/item_logout"
         android:title="Logout"/>
 

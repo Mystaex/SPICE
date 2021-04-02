@@ -13,25 +13,14 @@ import android.widget.Toast;
 import com.example.spice.R;
 import com.example.spice.ui.login.Member;
 import com.example.spice.ui.main.MainActivity;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-//Edit Account: startActivity(new Intent(getActivity(), ManageAccount.class));
-//Sign Out: FirebaseAuth.getInstance().signOut();
-//startActivity(new Intent(getActivity(), login.class));
-
-public class ManageAccount extends AppCompatActivity {
 
 
+public class ManageAccount extends AppCompatActivity
+{
     //Initializing text boxes and buttons
     EditText mName, mProfession, mUtaid, mGenre;
     Button editBtn, backBtn;
@@ -43,7 +32,8 @@ public class ManageAccount extends AppCompatActivity {
     Member member;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_account);
 
@@ -65,6 +55,7 @@ public class ManageAccount extends AppCompatActivity {
             {
                 Toast.makeText(ManageAccount.this, "Back Profile Page", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
             }
         });
 
@@ -79,18 +70,29 @@ public class ManageAccount extends AppCompatActivity {
                 String professionValue = mProfession.getText().toString().trim();
                 String utaidValue = mUtaid.getText().toString().trim();
                 String genreValue = mGenre.getText().toString().trim();
-
-                member = new Member();
-
                 FirebaseUser user = auth.getCurrentUser();
                 currentUserId = user.getUid();
                 ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId);
-                ref.child("name").setValue(nameValue);
-                ref.child("profession").setValue(professionValue);
-                ref.child("utaid").setValue(utaidValue);
-                ref.child("genre").setValue(genreValue);
+
+                if(!TextUtils.isEmpty(nameValue))
+                {
+                    ref.child("name").setValue(nameValue);
+                }
+                if(!TextUtils.isEmpty(professionValue))
+                {
+                    ref.child("profession").setValue(professionValue);
+                }
+                if(!TextUtils.isEmpty(utaidValue))
+                {
+                    ref.child("utaid").setValue(utaidValue);
+                }
+                if(!TextUtils.isEmpty(genreValue))
+                {
+                    ref.child("genre").setValue(genreValue);
+                }
                 Toast.makeText(ManageAccount.this, "Account Edited", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
             }
         });
     }

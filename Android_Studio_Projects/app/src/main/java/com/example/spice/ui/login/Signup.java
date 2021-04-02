@@ -30,7 +30,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Signup extends AppCompatActivity {
+public class Signup extends AppCompatActivity
+{
     private static final String TAG = "EmailPassword";
     //Initializing text boxes and buttons
     EditText mEmail, mPassword, mPasswordConfirm, mGenre;
@@ -41,12 +42,14 @@ public class Signup extends AppCompatActivity {
     DatabaseReference ref;
     String currentUserId;
     Member member;
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_signup);
-
         //initializing and connecting values to their respective text boxes.
         mEmail = findViewById(R.id.signup_email);
         mPassword = findViewById(R.id.signup_password);
@@ -67,6 +70,7 @@ public class Signup extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), login.class));
             }
         });
+
 
         //SIGN UP BUTTON CLICKED
         signupBtn.setOnClickListener(new View.OnClickListener()
@@ -90,6 +94,12 @@ public class Signup extends AppCompatActivity {
                 if(!emailValue.contains("@"))
                 {
                     mEmail.setError("Email needs an @ symbol");
+                    return;
+                }
+                //EMAIL DOESN'T HAVE .COM
+                if(!emailValue.contains(".com"))
+                {
+                    mEmail.setError("Email needs to include .com");
                     return;
                 }
                 if(emailValue.length() < 6)
@@ -132,38 +142,47 @@ public class Signup extends AppCompatActivity {
         });
     }
 
-    private void createAccount(String email, String password, String genre) {
+
+    private void createAccount(String email, String password, String genre)
+    {
         // [START create_user_with_email]
         auth.createUserWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        Member member = new Member();
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d(TAG, "createUserWithEmail:success");
-                            FirebaseUser user = auth.getCurrentUser();
-                            currentUserId = user.getUid();
-                            member.setgenre(genre);
-                            member.setpassword(password);
-                            member.setemail(email);
-                            member.setuserid(currentUserId);
-                            ref = FirebaseDatabase.getInstance().getReference().child("Member");
-                            ref.child(currentUserId).setValue(member);
-                            updateUI(user);
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(Signup.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
-                            updateUI(null);
-                        }
-                    }
-                });
+        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
+        {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task)
+            {
+                Member member = new Member();
+                if (task.isSuccessful())
+                {
+                    // Sign in success, update UI with the signed-in user's information
+                    Log.d(TAG, "createUserWithEmail:success");
+                    FirebaseUser user = auth.getCurrentUser();
+                    currentUserId = user.getUid();
+                    member.setgenre(genre);
+                    member.setpassword(password);
+                    member.setemail(email);
+                    member.setuserid(currentUserId);
+                    ref = FirebaseDatabase.getInstance().getReference().child("Member");
+                    ref.child(currentUserId).setValue(member);
+                    updateUI(user);
+                }
+                else
+                {
+                    // If sign in fails, display a message to the user.
+                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                    Toast.makeText(Signup.this, "Authentication failed.",
+                            Toast.LENGTH_SHORT).show();
+                    updateUI(null);
+                }
+            }
+        });
         // [END create_user_with_email]
     }
 
-    private void updateUI(FirebaseUser user) {
+
+    private void updateUI(FirebaseUser user)
+    {
         if(user != null)
         {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));

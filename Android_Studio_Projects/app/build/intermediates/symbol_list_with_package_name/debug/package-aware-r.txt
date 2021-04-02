@@ -1845,6 +1845,7 @@ id animateToEnd
 id animateToStart
 id asConfigured
 id async
+id audioTimer
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -1857,10 +1858,6 @@ id beginning
 id blocking
 id bottom
 id bounce
-id btnChangePassword
-id btnDelete
-id btnEdit
-id btnLogout
 id btnPlay
 id btnRecord
 id btnSubmit
@@ -1875,6 +1872,7 @@ id chain
 id chains
 id change_back_submit
 id change_confirm
+id change_email
 id change_old
 id change_password
 id change_submit
@@ -1991,7 +1989,9 @@ id italic
 id item1
 id item2
 id item3
+id item_edit
 id item_logout
+id item_password
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
