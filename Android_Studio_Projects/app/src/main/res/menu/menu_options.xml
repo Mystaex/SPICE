@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/item_password"
-        android:title="Password"/>
+        android:title="Change Password"/>
     <item
         android:id="@+id/item_edit"
         android:title="Edit Profile"/>

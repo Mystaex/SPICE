@@ -1939,7 +1939,6 @@ id edit_profession
 id edit_query
 id edit_submit
 id edit_title
-id edit_utaid
 id elastic
 id email
 id end
@@ -2136,10 +2135,10 @@ id signup_back_submit
 id signup_button
 id signup_confirm
 id signup_email
-id signup_genre
 id signup_password
 id signup_submit
 id signup_title
+id signup_utaid
 id sin
 id skipCollapsed
 id slide

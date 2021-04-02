@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.spice.R;
-import com.example.spice.ui.login.Member;
 import com.example.spice.ui.main.MainActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -22,14 +21,13 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ManageAccount extends AppCompatActivity
 {
     //Initializing text boxes and buttons
-    EditText mName, mProfession, mUtaid, mGenre;
+    EditText mName, mProfession, mGenre;
     Button editBtn, backBtn;
 
     //initializing database
     private FirebaseAuth auth;
     private DatabaseReference ref;
     private String currentUserId;
-    Member member;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -40,7 +38,6 @@ public class ManageAccount extends AppCompatActivity
         //initializing and connecting values to their respective text boxes.
         mName = findViewById(R.id.edit_name);
         mProfession = findViewById(R.id.edit_profession);
-        mUtaid = findViewById(R.id.edit_utaid);
         mGenre = findViewById(R.id.edit_genre);
         editBtn = findViewById(R.id.edit_submit);
         backBtn = findViewById(R.id.edit_back_submit);
@@ -68,7 +65,6 @@ public class ManageAccount extends AppCompatActivity
                 //After user clicks submit the strings are formatted how we want for validation
                 String nameValue = mName.getText().toString().trim();
                 String professionValue = mProfession.getText().toString().trim();
-                String utaidValue = mUtaid.getText().toString().trim();
                 String genreValue = mGenre.getText().toString().trim();
                 FirebaseUser user = auth.getCurrentUser();
                 currentUserId = user.getUid();
@@ -81,10 +77,6 @@ public class ManageAccount extends AppCompatActivity
                 if(!TextUtils.isEmpty(professionValue))
                 {
                     ref.child("profession").setValue(professionValue);
-                }
-                if(!TextUtils.isEmpty(utaidValue))
-                {
-                    ref.child("utaid").setValue(utaidValue);
                 }
                 if(!TextUtils.isEmpty(genreValue))
                 {

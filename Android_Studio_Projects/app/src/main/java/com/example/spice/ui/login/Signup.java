@@ -34,7 +34,7 @@ public class Signup extends AppCompatActivity
 {
     private static final String TAG = "EmailPassword";
     //Initializing text boxes and buttons
-    EditText mEmail, mPassword, mPasswordConfirm, mGenre;
+    EditText mEmail, mPassword, mPasswordConfirm, mUtaid;
     Button signupBtn, backBtn;
 
     //initializing database
@@ -54,7 +54,7 @@ public class Signup extends AppCompatActivity
         mEmail = findViewById(R.id.signup_email);
         mPassword = findViewById(R.id.signup_password);
         mPasswordConfirm= findViewById(R.id.signup_confirm);
-        mGenre = findViewById(R.id.signup_genre);
+        mUtaid = findViewById(R.id.signup_utaid);
         signupBtn = findViewById(R.id.signup_submit);
         backBtn = findViewById(R.id.signup_back_submit);
 
@@ -82,7 +82,7 @@ public class Signup extends AppCompatActivity
                 String emailValue = mEmail.getText().toString().trim();
                 String passwordValue = mPassword.getText().toString().trim();
                 String passwordConfirmValue = mPasswordConfirm.getText().toString().trim();
-                String genreValue = mGenre.getText().toString().trim();
+                String utaidValue = mUtaid.getText().toString().trim();
 
                 //EMPTY EMAIL
                 if(TextUtils.isEmpty(emailValue))
@@ -136,14 +136,26 @@ public class Signup extends AppCompatActivity
                     mPasswordConfirm.setError("Must be the same as the password");
                     return;
                 }
+                //EMPTY CONFIRM PASSWORD
+                if(TextUtils.isEmpty(utaidValue))
+                {
+                    mUtaid.setError("UTA ID Number required");
+                    return;
+                }
+                //PASSWORD LESS THAN 6 CHARAS
+                if(utaidValue.length() != 10)
+                {
+                    mUtaid.setError("ID Number must have a length of 10");
+                    return;
+                }
 
-                createAccount(emailValue,passwordValue, genreValue);
+                createAccount(emailValue,passwordValue, utaidValue);
             }
         });
     }
 
 
-    private void createAccount(String email, String password, String genre)
+    private void createAccount(String email, String password, String utaid)
     {
         // [START create_user_with_email]
         auth.createUserWithEmailAndPassword(email, password)
@@ -159,7 +171,7 @@ public class Signup extends AppCompatActivity
                     Log.d(TAG, "createUserWithEmail:success");
                     FirebaseUser user = auth.getCurrentUser();
                     currentUserId = user.getUid();
-                    member.setgenre(genre);
+                    member.setgenre(utaid);
                     member.setpassword(password);
                     member.setemail(email);
                     member.setuserid(currentUserId);
