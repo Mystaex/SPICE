@@ -186,6 +186,7 @@ public class login extends AppCompatActivity
         if(user != null)
         {
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
         }
     }
 }
