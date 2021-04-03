@@ -532,6 +532,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="tooltip_background_dark">#e6616161</color>
     <color name="tooltip_background_light">#e6FFFFFF</color>
+    <color name="tvProfile">#c6cedf</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_content_inset_with_nav">72dp</dimen>
@@ -4925,6 +4926,12 @@
   </style>
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
+    </style>
+    <style name="itemProfile">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/tvProfile</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <declare-styleable name="ActionBar">
         <!-- The type of navigation to use. -->

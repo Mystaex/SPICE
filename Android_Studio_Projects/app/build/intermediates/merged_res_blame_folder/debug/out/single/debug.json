@@ -1,274 +1,346 @@
 [
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_record.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_edit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_remove.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_remove.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_remove.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_submit.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_submit.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_signup.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_signup.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_person.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable_blaze.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/drawable/blaze.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_sync.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_submit.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_submit.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/menu_menu_options.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/menu/menu_options.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\font_bungee.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\font\\bungee.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_record.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable_back_tabs.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/drawable/back_tabs.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_change_password.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_sync.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_record.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_remove.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_edit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_person.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_fragment_audio.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/fragment_audio.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_sync.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_play.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_play.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_record.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_activity_manage_account.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/activity_manage_account.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_select.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\drawable\\back_select.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_record.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_record.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_record.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_submit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_options.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\menu\\menu_options.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_person.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_sync.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_submit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_submit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_submit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable_shape_item_profle.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/drawable/shape_item_profle.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_activity_change_password.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/activity_change_password.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_contain_main.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\contain_main.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_play.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_play.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_remove.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_edit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_play.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_contain_main.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/contain_main.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_play.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_play.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_activity_signup.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/activity_signup.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_person.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_sync.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_sync.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_record.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_record.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_remove.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_edit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/font_roboto.ttf.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/font/roboto.ttf"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_audio.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_audio.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_submit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_submit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_edit.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_edit.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_remove.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_person.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_record.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_record.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/layout_fragment_graphs.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/layout/fragment_graphs.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_remove.png.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_remove.png"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_edit.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_manage_account.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\activity_manage_account.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable_back_select.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/drawable/back_select.xml"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_graphs.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\layout\\fragment_graphs.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable_back_tabs.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\src\\main\\res\\drawable\\back_tabs.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_edit.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_sync.png"
     },
     {
-        "merged": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\ethan\\Documents\\Project Files\\SPICE\\Android_Studio_Projects\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/font_bungee.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/font/bungee.xml"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_edit.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_edit.xml"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-hdpi/ic_play.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_edit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_edit.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_submit.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_play.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_play.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable_shape_edit_button.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/drawable/shape_edit_button.xml"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_remove.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_remove.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_record.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_record.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_person.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-mdpi/ic_person.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_person.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_person.xml"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_submit.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_submit.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_sync.png.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_sync.png"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_remove.xml.flat",
+        "source": "/Users/brenda/Documents/GitHub/SPICE_4/Android_Studio_Projects/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_remove.xml"
     }
 ]
