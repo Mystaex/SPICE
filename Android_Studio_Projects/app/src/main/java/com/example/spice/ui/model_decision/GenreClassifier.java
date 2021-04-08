@@ -15,6 +15,7 @@ import java.nio.FloatBuffer;
 
 public class GenreClassifier {
     private Interpreter interpreter;
+
     private String[] labels = new String[]{"Blues", "Classical", "Country", "Disco", "Hip-Hop",
             "Jazz", "Metal", "Pop", "Reggae", "Rock"};
 
@@ -32,7 +33,7 @@ public class GenreClassifier {
                     public void onSuccess(CustomModel model) {
                         File modelFile = model.getFile();
                         if (modelFile != null) {
-                            Interpreter interpreter = new Interpreter(modelFile);
+                            interpreter = new Interpreter(modelFile);
                         }
                     }
                 });
