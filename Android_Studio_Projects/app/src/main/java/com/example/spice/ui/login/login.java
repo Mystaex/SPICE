@@ -134,31 +134,31 @@ public class login extends AppCompatActivity
     {
         // [START sign_in_with_email]
         auth.signInWithEmailAndPassword(email, password)
-        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
-        {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task)
-            {
-                if (task.isSuccessful())
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
                 {
-                    // Sign in success, update UI with the signed-in user's information
-                    Log.d(TAG, "signInWithEmail:success");
-                    FirebaseUser user = auth.getCurrentUser();
-                    currentUserId = user.getUid();
-                    member.setuserid(currentUserId);
-                    updateUI(user);
-                }
-                else
-                {
-                    // If sign in fails, display a message to the user.
-                    Log.w(TAG, "signInWithEmail:failure", task.getException());
-                    mPassword.setError("Authentication failed.");
-                    mEmail.setError("Authentication failed.");
-                    Toast.makeText(login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
-                    updateUI(null);
-                }
-            }
-        });
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task)
+                    {
+                        if (task.isSuccessful())
+                        {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = auth.getCurrentUser();
+                            currentUserId = user.getUid();
+                            member.setuserid(currentUserId);
+                            updateUI(user);
+                        }
+                        else
+                        {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            mPassword.setError("Authentication failed.");
+                            mEmail.setError("Authentication failed.");
+                            Toast.makeText(login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            updateUI(null);
+                        }
+                    }
+                });
         // [END sign_in_with_email]
     }
 
@@ -168,14 +168,14 @@ public class login extends AppCompatActivity
         // [START send_email_verification]
         final FirebaseUser user = auth.getCurrentUser();
         user.sendEmailVerification()
-        .addOnCompleteListener(this, new OnCompleteListener<Void>()
-        {
-            @Override
-            public void onComplete(@NonNull Task<Void> task)
-            {
-                // Email sent
-            }
-        });
+                .addOnCompleteListener(this, new OnCompleteListener<Void>()
+                {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task)
+                    {
+                        // Email sent
+                    }
+                });
         // [END send_email_verification]
     }
 

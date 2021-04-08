@@ -24,8 +24,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -159,36 +157,36 @@ public class Signup extends AppCompatActivity
     {
         // [START create_user_with_email]
         auth.createUserWithEmailAndPassword(email, password)
-        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
-        {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task)
-            {
-                Member member = new Member();
-                if (task.isSuccessful())
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
                 {
-                    // Sign in success, update UI with the signed-in user's information
-                    Log.d(TAG, "createUserWithEmail:success");
-                    FirebaseUser user = auth.getCurrentUser();
-                    currentUserId = user.getUid();
-                    member.setgenre(utaid);
-                    member.setpassword(password);
-                    member.setemail(email);
-                    member.setuserid(currentUserId);
-                    ref = FirebaseDatabase.getInstance().getReference().child("Member");
-                    ref.child(currentUserId).setValue(member);
-                    updateUI(user);
-                }
-                else
-                {
-                    // If sign in fails, display a message to the user.
-                    Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                    Toast.makeText(Signup.this, "Authentication failed.",
-                            Toast.LENGTH_SHORT).show();
-                    updateUI(null);
-                }
-            }
-        });
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task)
+                    {
+                        Member member = new Member();
+                        if (task.isSuccessful())
+                        {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "createUserWithEmail:success");
+                            FirebaseUser user = auth.getCurrentUser();
+                            currentUserId = user.getUid();
+                            member.setgenre(utaid);
+                            member.setpassword(password);
+                            member.setemail(email);
+                            member.setuserid(currentUserId);
+                            ref = FirebaseDatabase.getInstance().getReference().child("Member");
+                            ref.child(currentUserId).setValue(member);
+                            updateUI(user);
+                        }
+                        else
+                        {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(Signup.this, "Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
+                            updateUI(null);
+                        }
+                    }
+                });
         // [END create_user_with_email]
     }
 

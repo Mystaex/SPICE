@@ -1197,6 +1197,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color tvProfile
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -1682,6 +1683,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back_select
 drawable back_tabs
+drawable blaze
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1726,10 +1728,12 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_person
 drawable ic_play
 drawable ic_record
 drawable ic_remove
 drawable ic_submit
+drawable ic_sync
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1762,10 +1766,13 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable shape_edit_button
+drawable shape_item_profle
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font bungee
+font roboto
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1981,6 +1988,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgShape
 id info
 id invisible
 id inward
@@ -2007,6 +2015,11 @@ id linear
 id listMode
 id list_item
 id login_main
+id ly_profileEmailAddress
+id ly_profileFavoriteGenre
+id ly_profileName
+id ly_profileProfession
+id ly_profileUtaId
 id masked
 id material_clock_display
 id material_clock_face
@@ -2190,6 +2203,11 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
+id textView3
+id textView4
+id textView5
+id textView6
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2216,6 +2234,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_profileEmailAddress
+id tv_profileFavoriteGenre
+id tv_profileName
+id tv_profileProfession
+id tv_utaId
 id unchecked
 id uniform
 id unlabeled
@@ -3250,6 +3273,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style itemProfile
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

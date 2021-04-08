@@ -56,21 +56,21 @@ public class ChangePassword extends AppCompatActivity
 
         currentUserId = user.getUid();
         FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId)
-        .addValueEventListener(new ValueEventListener()
-        {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-            {
-                retrievedEmail = dataSnapshot.child("email").getValue().toString();
-                retrievedPassword = dataSnapshot.child("password").getValue().toString();
-            }
+                .addValueEventListener(new ValueEventListener()
+                {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                    {
+                        retrievedEmail = dataSnapshot.child("email").getValue().toString();
+                        retrievedPassword = dataSnapshot.child("password").getValue().toString();
+                    }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError)
-            {
-                Toast.makeText(ChangePassword.this, "Authentication Failed.", Toast.LENGTH_SHORT).show();
-            }
-        });
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError)
+                    {
+                        Toast.makeText(ChangePassword.this, "Authentication Failed.", Toast.LENGTH_SHORT).show();
+                    }
+                });
 
 
         backBtn.setOnClickListener(new View.OnClickListener()

@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\1Push\\Android_Studio_Projects\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Downloads\\SPICE-brenda_develop\\SPICE-brenda_develop\\Android_Studio_Projects\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\1Push\\Android_Studio_Projects\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\Downloads\\SPICE-brenda_develop\\SPICE-brenda_develop\\Android_Studio_Projects\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "102",
+                        "startOffsets": "100",
                         "endLines": "14",
                         "endColumns": "12",
-                        "endOffsets": "828"
+                        "endOffsets": "814"
                     },
                     "to": {
                         "startLines": "25",

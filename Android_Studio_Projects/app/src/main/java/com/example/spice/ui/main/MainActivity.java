@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.example.spice.R;
 import com.example.spice.ui.audio_submission.AudioFragment;
 import com.example.spice.ui.graphs.GraphsFragment;
+import com.example.spice.ui.login.login;
 import com.example.spice.ui.profile.ChangePassword;
 import com.example.spice.ui.profile.ManageAccount;
 import com.example.spice.ui.profile.ProfileFragment;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (item.getItemId() == R.id.item_logout)
         {
             //implements functionality when is logout
+            startActivity(new Intent(getApplicationContext(), login.class));
             FirebaseAuth.getInstance().signOut();
             finish();
             return true;
@@ -175,9 +177,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void setFragment(Fragment fragment)
     {
         getSupportFragmentManager()
-        .beginTransaction()
-        .replace(R.id.base_container, fragment)
-        .commit();
+                .beginTransaction()
+                .replace(R.id.base_container, fragment)
+                .commit();
     }
 
 

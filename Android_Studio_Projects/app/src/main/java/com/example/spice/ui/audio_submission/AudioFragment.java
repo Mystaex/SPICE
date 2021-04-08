@@ -251,6 +251,7 @@ public class AudioFragment extends Fragment {
     {
         if(playing)
         {
+
             stopPlay();
         }
 
