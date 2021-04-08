@@ -21,7 +21,17 @@ import com.example.spice.ui.graphs.GraphsFragment;
 import com.example.spice.ui.profile.ChangePassword;
 import com.example.spice.ui.profile.ManageAccount;
 import com.example.spice.ui.profile.ProfileFragment;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.ml.modeldownloader.CustomModel;
+import com.google.firebase.ml.modeldownloader.CustomModelDownloadConditions;
+import com.google.firebase.ml.modeldownloader.DownloadType;
+import com.google.firebase.ml.modeldownloader.FirebaseModelDownloader;
+import org.tensorflow.lite.Interpreter;
+
+import java.io.File;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener
