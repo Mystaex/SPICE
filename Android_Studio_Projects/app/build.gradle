@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.spice"
-        minSdkVersion 16
+        minSdkVersion 19 //changed from 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -19,7 +19,7 @@ android {
     }
 
     aaptOptions {
-        noCompress "tflite", "lite"
+        noCompress "tflite"
     }
 
     buildTypes {
@@ -51,9 +51,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:20.0.3'
     implementation 'com.google.firebase:firebase-firestore:22.1.2'
 
-    implementation platform('com.google.firebase:firebase-bom:26.8.0')
-    implementation 'com.google.firebase:firebase-ml-modeldownloader'
-    implementation 'org.tensorflow:tensorflow-lite:2.3.0'
+    implementation 'org.tensorflow:tensorflow-lite:2.4.0'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

@@ -23,15 +23,17 @@ com/example/spice/ui/profile/ProfileFragment.java
  com.example.spice.ui.profile.ProfileFragment
 com/example/spice/ui/main/MainActivity.java
  com.example.spice.ui.main.MainActivity
-com/example/spice/ui/audio_submission/AudioFragment.java
- com.example.spice.ui.audio_submission.AudioFragment
- com.example.spice.ui.audio_submission.AudioFragment$1
- com.example.spice.ui.audio_submission.AudioFragment$2
- com.example.spice.ui.audio_submission.AudioFragment$2$1
+com/example/spice/ui/login/Member.java
+ com.example.spice.ui.login.Member
 com/example/spice/ui/login/Signup.java
  com.example.spice.ui.login.Signup
  com.example.spice.ui.login.Signup$1
  com.example.spice.ui.login.Signup$2
  com.example.spice.ui.login.Signup$3
-com/example/spice/ui/login/Member.java
- com.example.spice.ui.login.Member
+com/example/spice/ui/audio_submission/AudioFragment.java
+ com.example.spice.ui.audio_submission.AudioFragment
+ com.example.spice.ui.audio_submission.AudioFragment$1
+ com.example.spice.ui.audio_submission.AudioFragment$2
+ com.example.spice.ui.audio_submission.AudioFragment$2$1
+com/example/spice/ui/model_decision/GenreClassifier.java
+ com.example.spice.ui.model_decision.GenreClassifier
