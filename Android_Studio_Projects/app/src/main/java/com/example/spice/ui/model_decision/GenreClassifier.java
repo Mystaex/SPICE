@@ -31,7 +31,7 @@ public class GenreClassifier {
             Model model = Model.newInstance(context);
 
             // Creates inputs for reference.
-            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 37}, DataType.FLOAT32);
+            TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 17}, DataType.FLOAT32);
             inputFeature0.loadArray(data);
 
             // Runs model inference and gets result.
