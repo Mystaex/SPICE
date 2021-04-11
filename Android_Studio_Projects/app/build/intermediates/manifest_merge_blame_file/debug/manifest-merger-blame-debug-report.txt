@@ -13,255 +13,258 @@
 11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 11-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:5-80
 11-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:5:22-78
-12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-12-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:5-71
-12-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:22-68
-13    <uses-permission android:name="android.permission.STORAGE" />
-13-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:5-66
-13-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:22-63
-14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:8:5-67
-14-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:8:22-64
-15
-16    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-18-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:25:5-79
-18-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:25:22-76
-19
-20    <application
-20-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:10:5-38:19
-21        android:name="androidx.multidex.MultiDexApplication"
-22        android:allowBackup="true"
-22-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:11:9-35
-23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.3.1] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f3d364c4591b4da0386e5d8846d9d728\core-1.3.1\AndroidManifest.xml:24:18-86
-24        android:debuggable="true"
-25        android:icon="@mipmap/ic_launcher"
-25-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:12:9-43
-26        android:label="@string/app_name"
-26-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:13:9-41
-27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:14:9-54
-28        android:supportsRtl="true"
-28-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:15:9-35
-29        android:testOnly="true"
-30        android:theme="@style/AppCompatTheme" >
-30-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:9-46
-31        <activity android:name="com.example.spice.ui.profile.ChangePassword" />
-31-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:9-72
-31-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:19-60
-32        <activity android:name="com.example.spice.ui.profile.ManageAccount" />
-32-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:9-62
-32-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:19-59
-33        <activity android:name="com.example.spice.ui.login.Signup" />
-33-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:9-53
-33-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:19-50
-34        <activity android:name="com.example.spice.ui.login.login" >
-34-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:9-26:20
-34-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:19-49
-35            <intent-filter>
-35-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:13-25:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:17-69
-36-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:24:17-77
-38-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:24:27-74
-39            </intent-filter>
-40        </activity>
-41        <activity android:name="com.example.spice.ui.main.MainActivity" >
-41-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:27:9-33:20
-41-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:27:19-55
-42            <intent-filter>
-42-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:13-25:29
-43                <action android:name="android.intent.action.MAIN" />
-43-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:17-69
-43-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:25-66
-44
-45                <category android:name="android.intent.category.LAUNCHER" />
-45-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:24:17-77
-45-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:24:27-74
-46            </intent-filter>
-47        </activity>
-48
-49        <meta-data
-49-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:35:9-37:57
-50            android:name="preloaded_fonts"
-50-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:36:13-43
-51            android:resource="@array/preloaded_fonts" />
-51-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:37:13-54
-52
-53        <service
-53-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:12:9-18:19
-54            android:name="com.google.firebase.components.ComponentDiscoveryService"
-54-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:13:13-84
-55            android:directBootAware="true"
-55-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-56            android:exported="false" >
-56-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:14:13-37
-57            <meta-data
-57-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:15:13-17:85
-58                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-58-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:16:17-124
-59                android:value="com.google.firebase.components.ComponentRegistrar" />
-59-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:17:17-82
-60            <meta-data
-60-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
-61                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-61-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
-62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
-63            <meta-data
-63-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:77:13-79:85
-64                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-64-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:78:17-109
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:79:17-82
-66            <meta-data
-66-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:20:13-22:85
-67                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-67-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:21:17-111
-68                android:value="com.google.firebase.components.ComponentRegistrar" />
-68-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:22:17-82
-69            <meta-data
-69-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:15:13-17:85
-70                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-70-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:16:17-113
-71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:17:17-82
-72            <!--
-73                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-74                clients to use it as well, by defining this registrar in their own core/common library.
-75            -->
-76            <meta-data
-76-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-77                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-77-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-78                android:value="com.google.firebase.components.ComponentRegistrar" />
-78-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-79        </service>
-80
-81        <activity
-81-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:27:9-44:20
-82            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-82-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:28:13-80
-83            android:excludeFromRecents="true"
-83-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:29:13-46
-84            android:exported="true"
-84-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:30:13-36
-85            android:launchMode="singleTask"
-85-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:31:13-44
-86            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-86-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:32:13-72
-87            <intent-filter>
-87-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:33:13-43:29
-88                <action android:name="android.intent.action.VIEW" />
-88-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:17-69
-88-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:25-66
-89
-90                <category android:name="android.intent.category.DEFAULT" />
-90-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
-90-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
-91                <category android:name="android.intent.category.BROWSABLE" />
-91-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:17-78
-91-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:27-75
-92
-93                <data
-93-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:39:17-42:51
-94                    android:host="firebase.auth"
-94-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:40:21-49
-95                    android:path="/"
-95-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:41:21-37
-96                    android:scheme="genericidp" />
-96-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:42:21-48
-97            </intent-filter>
-98        </activity>
-99        <activity
-99-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:45:9-62:20
-100            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-100-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:46:13-79
-101            android:excludeFromRecents="true"
-101-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:47:13-46
-102            android:exported="true"
-102-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:48:13-36
-103            android:launchMode="singleTask"
-103-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:49:13-44
-104            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-104-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:50:13-72
-105            <intent-filter>
-105-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:51:13-61:29
-106                <action android:name="android.intent.action.VIEW" />
-106-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:17-69
-106-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:25-66
-107
-108                <category android:name="android.intent.category.DEFAULT" />
-108-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
-108-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
-109                <category android:name="android.intent.category.BROWSABLE" />
-109-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:17-78
-109-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:27-75
-110
-111                <data
-111-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:39:17-42:51
-112                    android:host="firebase.auth"
-112-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:40:21-49
-113                    android:path="/"
-113-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:41:21-37
-114                    android:scheme="recaptcha" />
-114-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:42:21-48
-115            </intent-filter>
-116        </activity>
-117
-118        <service
-118-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:64:9-73:19
-119            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
-119-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:65:13-101
-120            android:enabled="true"
-120-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:66:13-35
-121            android:exported="false" >
-121-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:67:13-37
-122            <intent-filter>
-122-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:68:13-72:29
-123                <action android:name="com.google.firebase.auth.api.gms.service.START" />
-123-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:69:17-89
-123-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:69:25-86
-124
-125                <category android:name="android.intent.category.DEFAULT" />
-125-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
-125-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
-126            </intent-filter>
-127        </service>
-128
-129        <provider
-129-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
-130            android:name="com.google.firebase.provider.FirebaseInitProvider"
-130-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-131            android:authorities="com.example.spice.firebaseinitprovider"
-131-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
-132            android:directBootAware="true"
-132-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
-133            android:exported="false"
-133-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
-134            android:initOrder="100" />
-134-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
-135
-136        <activity
-136-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-137            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-137-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-138            android:exported="false"
-138-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-139-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-140
-141        <meta-data
-141-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
-142            android:name="com.google.android.gms.version"
-142-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
-143            android:value="@integer/google_play_services_version" />
-143-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
-144    </application>
-145
-146</manifest>
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:5-71
+13-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:7:22-68
+14    <uses-permission android:name="android.permission.STORAGE" />
+14-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:8:5-66
+14-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:8:22-63
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:9:5-67
+15-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:9:22-64
+16
+17    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+18    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:25:5-79
+19-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:25:22-76
+20
+21    <application
+21-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:11:5-39:19
+22        android:name="androidx.multidex.MultiDexApplication"
+23        android:allowBackup="true"
+23-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:12:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.3.1] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f3d364c4591b4da0386e5d8846d9d728\core-1.3.1\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:13:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:14:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:15:9-54
+29        android:supportsRtl="true"
+29-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:16:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppCompatTheme" >
+31-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:17:9-46
+32        <activity android:name="com.example.spice.ui.profile.ChangePassword" />
+32-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:9-72
+32-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:18:19-60
+33        <activity android:name="com.example.spice.ui.profile.ManageAccount" />
+33-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:9-62
+33-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:19:19-59
+34        <activity android:name="com.example.spice.ui.login.Signup" />
+34-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:9-53
+34-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:20:19-50
+35        <activity android:name="com.example.spice.ui.login.login" >
+35-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:9-27:20
+35-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:21:19-49
+36            <intent-filter>
+36-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:13-26:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:17-69
+37-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:25:17-77
+39-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:25:27-74
+40            </intent-filter>
+41        </activity>
+42        <activity android:name="com.example.spice.ui.main.MainActivity" >
+42-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:28:9-34:20
+42-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:28:19-55
+43            <intent-filter>
+43-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:22:13-26:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:17-69
+44-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:23:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:25:17-77
+46-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:25:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <meta-data
+50-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:36:9-38:57
+51            android:name="preloaded_fonts"
+51-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:37:13-43
+52            android:resource="@array/preloaded_fonts" />
+52-->C:\Users\PolskaFly\Documents\GitHub\SPICE\Android_Studio_Projects\app\src\main\AndroidManifest.xml:38:13-54
+53
+54        <service
+54-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:12:9-18:19
+55            android:name="com.google.firebase.components.ComponentDiscoveryService"
+55-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:13:13-84
+56            android:directBootAware="true"
+56-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+57            android:exported="false" >
+57-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:14:13-37
+58            <meta-data
+58-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:15:13-17:85
+59                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+59-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:16:17-124
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\bee60bf14e13b4ec436d50f7f617ea52\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:17:17-82
+61            <meta-data
+61-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
+62                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+62-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.firebase:firebase-database:19.6.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:77:13-79:85
+65                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+65-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:78:17-109
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:79:17-82
+67            <meta-data
+67-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:20:13-22:85
+68                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+68-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:21:17-111
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.firebase:firebase-firestore:22.1.2] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\b0cb62c76e324db49ec32f2c8c13ccf4\jetified-firebase-firestore-22.1.2\AndroidManifest.xml:22:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:15:13-17:85
+71                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+71-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:16:17-113
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\e7b0054fb0bb88ef8282946ba5d0f95b\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:17:17-82
+73            <!--
+74                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+75                clients to use it as well, by defining this registrar in their own core/common library.
+76            -->
+77            <meta-data
+77-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+78                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+78-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+80        </service>
+81
+82        <activity
+82-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:27:9-44:20
+83            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+83-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:28:13-80
+84            android:excludeFromRecents="true"
+84-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:29:13-46
+85            android:exported="true"
+85-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:30:13-36
+86            android:launchMode="singleTask"
+86-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:31:13-44
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+87-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:32:13-72
+88            <intent-filter>
+88-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:33:13-43:29
+89                <action android:name="android.intent.action.VIEW" />
+89-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:17-69
+89-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:25-66
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
+91-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
+92                <category android:name="android.intent.category.BROWSABLE" />
+92-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:17-78
+92-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:27-75
+93
+94                <data
+94-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:39:17-42:51
+95                    android:host="firebase.auth"
+95-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:40:21-49
+96                    android:path="/"
+96-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:41:21-37
+97                    android:scheme="genericidp" />
+97-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:42:21-48
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:45:9-62:20
+101            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+101-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:46:13-79
+102            android:excludeFromRecents="true"
+102-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:47:13-46
+103            android:exported="true"
+103-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:48:13-36
+104            android:launchMode="singleTask"
+104-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:49:13-44
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+105-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:50:13-72
+106            <intent-filter>
+106-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:51:13-61:29
+107                <action android:name="android.intent.action.VIEW" />
+107-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:17-69
+107-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:34:25-66
+108
+109                <category android:name="android.intent.category.DEFAULT" />
+109-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
+109-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
+110                <category android:name="android.intent.category.BROWSABLE" />
+110-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:17-78
+110-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:37:27-75
+111
+112                <data
+112-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:39:17-42:51
+113                    android:host="firebase.auth"
+113-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:40:21-49
+114                    android:path="/"
+114-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:41:21-37
+115                    android:scheme="recaptcha" />
+115-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:42:21-48
+116            </intent-filter>
+117        </activity>
+118
+119        <service
+119-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:64:9-73:19
+120            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+120-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:65:13-101
+121            android:enabled="true"
+121-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:66:13-35
+122            android:exported="false" >
+122-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:67:13-37
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:68:13-72:29
+124                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+124-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:69:17-89
+124-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:69:25-86
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:17-76
+126-->[com.google.firebase:firebase-auth:20.0.3] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\59708e4c89685822c69df7ac6667b1ed\jetified-firebase-auth-20.0.3\AndroidManifest.xml:36:27-73
+127            </intent-filter>
+128        </service>
+129
+130        <activity
+130-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+131-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+133-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\a63935de15513710d98bf227aa324a8b\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+134
+135        <provider
+135-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+136            android:name="com.google.firebase.provider.FirebaseInitProvider"
+136-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+137            android:authorities="com.example.spice.firebaseinitprovider"
+137-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+139            android:exported="false"
+139-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+140            android:initOrder="100" />
+140-->[com.google.firebase:firebase-common:19.5.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\9b2ec3a49389295e09fe37e42c5e30ad\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+141
+142        <meta-data
+142-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:23:9-25:69
+143            android:name="com.google.android.gms.version"
+143-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:24:13-58
+144            android:value="@integer/google_play_services_version" />
+144-->[com.google.android.gms:play-services-basement:17.1.0] C:\Users\PolskaFly\.gradle\caches\transforms-2\files-2.1\74483de84094d0d661b0d354666c2c5a\jetified-play-services-basement-17.1.0\AndroidManifest.xml:25:13-66
+145    </application>
+146
+147</manifest>

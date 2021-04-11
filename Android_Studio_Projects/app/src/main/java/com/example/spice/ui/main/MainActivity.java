@@ -3,11 +3,17 @@ package com.example.spice.ui.main;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -21,20 +27,18 @@ import com.example.spice.ui.graphs.GraphsFragment;
 import com.example.spice.ui.profile.ChangePassword;
 import com.example.spice.ui.profile.ManageAccount;
 import com.example.spice.ui.profile.ProfileFragment;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.File;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener
-{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener {
     ColorStateList def;
     TextView item1, item2, item3, select;
 
-
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -57,8 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_options, menu);
         return true;
@@ -66,25 +69,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item)
-    {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
 
-        if (item.getItemId() == R.id.item_logout)
-        {
+        if (item.getItemId() == R.id.item_logout) {
             //implements functionality when is logout
             FirebaseAuth.getInstance().signOut();
             finish();
             return true;
-        }
-        else if(item.getItemId() == R.id.item_password)
-        {
+        } else if (item.getItemId() == R.id.item_password) {
             startActivity(new Intent(getApplicationContext(), ChangePassword.class));
             finish();
             return true;
-        }
-        else if(item.getItemId() == R.id.item_edit)
-        {
+        } else if (item.getItemId() == R.id.item_edit) {
             startActivity(new Intent(getApplicationContext(), ManageAccount.class));
             finish();
             return true;
@@ -95,53 +92,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    protected void onStart()
-    {
+    protected void onStart() {
         super.onStart();
         setFragment(AudioFragment.newInstance());
     }
 
 
     @Override
-    protected void onResume()
-    {
+    protected void onResume() {
         super.onResume();
     }
 
 
     @Override
-    protected void onRestart()
-    {
+    protected void onRestart() {
         super.onRestart();
     }
 
 
     @Override
-    protected void onPause()
-    {
+    protected void onPause() {
         super.onPause();
     }
 
 
     @Override
-    protected void onStop()
-    {
+    protected void onStop() {
         super.onStop();
     }
 
 
     @Override
-    protected void onDestroy()
-    {
+    protected void onDestroy() {
         super.onDestroy();
     }
 
 
     @Override
-    public void onClick(View view)
-    {
-        if (view.getId() == R.id.item1)
-        {
+    public void onClick(View view) {
+        if (view.getId() == R.id.item1) {
             select.animate().x(0).setDuration(100);
             item1.setTextColor(Color.BLACK);
             item2.setTextColor(def);
@@ -149,9 +138,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             setFragment(AudioFragment.newInstance());
 
-        }
-        else if (view.getId() == R.id.item2)
-        {
+        } else if (view.getId() == R.id.item2) {
             item1.setTextColor(def);
             item2.setTextColor(Color.BLACK);
             item3.setTextColor(def);
@@ -159,9 +146,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             select.animate().x(size).setDuration(100);
 
             setFragment(GraphsFragment.newInstance());
-        }
-        else if (view.getId() == R.id.item3)
-        {
+        } else if (view.getId() == R.id.item3) {
             item1.setTextColor(def);
             item2.setTextColor(def);
             item3.setTextColor(Color.BLACK);
@@ -174,19 +159,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    private void setFragment(Fragment fragment)
-    {
+    private void setFragment(Fragment fragment) {
         getSupportFragmentManager()
-        .beginTransaction()
-        .replace(R.id.base_container, fragment)
-        .commit();
+                .beginTransaction()
+                .replace(R.id.base_container, fragment)
+                .commit();
     }
 
 
     //getGroupId()
     @Override
-    public boolean onMenuItemClick(MenuItem item)
-    {
+    public boolean onMenuItemClick(MenuItem item) {
         return true;
     }
 }
