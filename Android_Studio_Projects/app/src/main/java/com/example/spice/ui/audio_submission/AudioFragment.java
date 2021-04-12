@@ -7,30 +7,18 @@ import android.media.MediaRecorder;
 import android.os.Bundle;
 
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-
-import android.os.Environment;
 import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.Toast;
-
 import com.example.spice.R;
 import com.example.spice.ui.model_decision.GenreClassifier;
-
-import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 
-import android.content.Context;
-
-import static android.Manifest.permission.RECORD_AUDIO;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class AudioFragment extends Fragment {
 
@@ -248,7 +236,6 @@ public class AudioFragment extends Fragment {
         }
     }
 
-
     private void submit()
     {
         if(playing)
@@ -258,5 +245,7 @@ public class AudioFragment extends Fragment {
 
         //: Implement Submit functionality
         Toast.makeText(requireContext(), "Submit function", Toast.LENGTH_SHORT).show();
+
+        GenreClassifier genreClassifier = new GenreClassifier(getContext());
     }
 }
