@@ -25,11 +25,9 @@ public class GenreClassifier {
         try {
             Model model = Model.newInstance(context);
 
-            // Creates inputs for reference.
             TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 17}, DataType.FLOAT32);
             inputFeature0.loadArray(data);
 
-            // Runs model inference and gets result.
             Model.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
@@ -43,11 +41,9 @@ public class GenreClassifier {
             }
 
             if (null != associatedAxisLabels) {
-                // Map of labels and their corresponding probability
                 TensorLabel labels = new TensorLabel(associatedAxisLabels,
                        outputFeature0);
 
-                // Create a map to access the result based on label
                 floatMap = labels.getMapWithFloatValue();
             }
 
