@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppCompatTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+    </style>
+
+
+    <style name="itemProfile">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/tvProfile</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
