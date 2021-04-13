@@ -2,12 +2,28 @@ import numpy as np
 import librosa
 import array as arr
 
+
+means = [3.79534063e-01,8.48761481e-02,1.30859051e-01,2.67638762e-03,
+         2.19921943e+03,4.16672699e+05,2.24138596e+03,1.18271113e+05,
+         4.56607659e+03,1.62878997e+06,1.02578486e-01,2.62012081e-03,
+        -3.64630510e-04,1.25975714e-02,-3.95501617e-04,5.60155268e-03,
+         1.24887709e+02]
+
+vars = [8.18323495e-03,9.28551851e-05,4.69800060e-03,1.28554416e-05,
+       5.65237792e+05,1.89175122e+11,2.95748054e+05,1.02708882e+10,
+       2.69610866e+06,2.21808498e+12,2.08382222e-03,1.30565117e-05,
+       2.88780387e-06,1.59582813e-04,1.22714766e-06,4.42609669e-05,
+       1.08307001e+03]
+
+
+def scale_data(array,means=means,stds=np.power(vars,.5)):
+    return (array-means)/stds
+
 def getArray():
     audio_data = 'storage/emulated/0/Android/data/com.example.spice/files/audio.wav'
 
     y, sr = librosa.load(audio_data) # sample rate can be changed here, y= signal
     arr1 = arr.array('f')
-
 
     chroma_stft = librosa.feature.chroma_stft(y=y,sr=sr)
     chroma_stft_mean = np.mean(chroma_stft)
@@ -71,5 +87,6 @@ def getArray():
     #tempo_mean = np.mean(tempo)     - tempo only has 1 variable
     arr1.insert(16,tempo)
 
-
-    return arr1
+    newArray= np.array(arr1, dtype=float)
+    newArray = scale_data(newArray)
+    return newArray

@@ -3,30 +3,23 @@ import android.content.Context;
 import android.util.Log;
 import com.example.spice.ml.Model;
 import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.Interpreter;
-import org.tensorflow.lite.support.common.ops.DequantizeOp;
-import org.tensorflow.lite.support.common.ops.NormalizeOp;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 import java.io.IOException;
-import java.nio.FloatBuffer;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import org.tensorflow.lite.support.common.FileUtil;
-import org.tensorflow.lite.support.common.TensorProcessor;
 import org.tensorflow.lite.support.label.TensorLabel;
 
 public class GenreClassifier {
-    private Interpreter.Options options = new Interpreter.Options();
     private Context context;
+    Map<String, Float> floatMap = new HashMap<String, Float>();
 
     public GenreClassifier(Context context){
         this.context=context;
     }
 
     public Map<String, Float> predict(float data[]){
-        Map<String, Float> floatMap = new HashMap<String, Float>();
         try {
             Model model = Model.newInstance(context);
 
@@ -66,18 +59,17 @@ public class GenreClassifier {
     }
 
 
-    private int maxIndex(FloatBuffer array){
-        float max = array.get(0);
-        int index = 0;
+    public String getMaxProbabilityString(){
+        float max = 0;
+        String maxProbabilityString = new String();
 
-        for (int i = 0; i < array.capacity(); i++)
+        for (Map.Entry<String, Float> entry : floatMap.entrySet())
         {
-            if (max < array.get(i))
-            {
-                max = array.get(i);
-                index = i;
+            if(entry.getValue() > max){
+                max = entry.getValue();
+                maxProbabilityString = entry.getKey();
             }
         }
-        return index;
+        return maxProbabilityString;
     }
 }

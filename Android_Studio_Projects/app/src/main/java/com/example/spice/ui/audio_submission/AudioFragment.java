@@ -27,96 +27,31 @@ import android.media.AudioFormat;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-
-import android.os.Environment;
 import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.Toast;
-
 import com.example.spice.R;
 import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
-import com.github.hiteshsondhi88.libffmpeg.FFmpegLoadBinaryResponseHandler;
-import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
-import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
-
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
-
-import android.Manifest;
-import android.content.pm.PackageManager;
-import android.media.AudioFormat;
-import android.media.MediaPlayer;
-import android.media.MediaRecorder;
-import android.os.Bundle;
-
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
-import android.os.Environment;
-import android.os.SystemClock;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.Chronometer;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
-import com.example.spice.R;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-
-import android.content.res.ColorStateList;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import com.chaquo.python.PyObject;
-import com.chaquo.python.Python;
-import com.chaquo.python.android.AndroidPlatform;
-import com.example.spice.R;
-import com.example.spice.ui.audio_submission.AudioFragment;
-import com.example.spice.ui.graphs.GraphsFragment;
-import com.example.spice.ui.profile.ProfileFragment;
-import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
-import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
-import com.github.hiteshsondhi88.libffmpeg.FFmpegLoadBinaryResponseHandler;
-import com.github.hiteshsondhi88.libffmpeg.LoadBinaryResponseHandler;
-import com.github.hiteshsondhi88.libffmpeg.exceptions.FFmpegNotSupportedException;
-
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-
 import omrecorder.AudioChunk;
 import omrecorder.AudioRecordConfig;
 import omrecorder.OmRecorder;
 import omrecorder.PullTransport;
 import omrecorder.PullableSource;
 import omrecorder.Recorder;
-
-import static android.Manifest.permission.RECORD_AUDIO;
-import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
-
 import com.example.spice.ui.model_decision.GenreClassifier;
 
 
@@ -322,9 +257,12 @@ public class AudioFragment extends Fragment {
         //create python object
         PyObject pyobj = py.getModule("pythonScipt");
         // call the function
-        PyObject obj = pyobj.callAttr("getArray");
+        float[] features = pyobj.callAttr("getArray").toJava(float[].class);
 
         GenreClassifier genreClassifier = new GenreClassifier(getContext());
-        System.out.println(obj.toString());
+
+        Map<String, Float> map = genreClassifier.predict(features);
+        genreClassifier.getMaxProbabilityString();
+        System.out.println(genreClassifier.getMaxProbabilityString());
     }
 }
