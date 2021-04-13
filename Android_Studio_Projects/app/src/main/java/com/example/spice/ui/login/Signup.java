@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.spice.R;
 import com.example.spice.ui.main.MainActivity;
+import com.google.android.gms.common.util.NumberUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -147,10 +148,29 @@ public class Signup extends AppCompatActivity
                     mUtaid.setError("ID Number must have a length of 10");
                     return;
                 }
+                //UTAID NOT DIGIT
+                if(!isNumber(utaidValue))
+                {
+                    mUtaid.setError("ID Number must be numbers");
+                    return;
+                }
 
                 createAccount(emailValue,passwordValue, utaidValue);
             }
         });
+    }
+
+    public static boolean isNumber(String str)
+    {
+        try
+        {
+            Double.parseDouble(str);
+            return true;
+        }
+        catch(NumberFormatException e)
+        {
+            return false;
+        }
     }
 
 
