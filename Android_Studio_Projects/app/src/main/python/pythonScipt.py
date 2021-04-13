@@ -89,4 +89,5 @@ def getArray():
 
     newArray= np.array(arr1, dtype=float)
     newArray = scale_data(newArray)
+
     return newArray

@@ -22,6 +22,7 @@
 package com.example.spice.ui.audio_submission;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.content.pm.PackageManager;
 import android.media.AudioFormat;
 import android.media.MediaPlayer;
@@ -69,7 +70,7 @@ public class AudioFragment extends Fragment {
     Recorder recorder;
 
     private int PERMISSION_CODE = 1;        //Random positive integer meaning permission granted
-    private long minimumTimeMS = 5000;      //Minimum length in ms of recorded audio
+    private long minimumTimeMS = 3000;      //Minimum length in ms of recorded audio
 
     boolean recording = false;              //Decider of recording button switch
     boolean playing = false;                //Decider of playing button switch
@@ -262,7 +263,17 @@ public class AudioFragment extends Fragment {
         GenreClassifier genreClassifier = new GenreClassifier(getContext());
 
         Map<String, Float> map = genreClassifier.predict(features);
-        genreClassifier.getMaxProbabilityString();
-        System.out.println(genreClassifier.getMaxProbabilityString());
+        showGenrePopUp(genreClassifier.getMaxProbabilityString());
+    }
+
+    private void showGenrePopUp(String genre){
+        AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
+        builder.setTitle("Song Classifier");
+        builder.setMessage("Song genre is: "+genre);
+        builder.setPositiveButton("Okay", (dialog, which) -> {
+            dialog.dismiss();
+        });
+        builder.create();
+        builder.show();
     }
 }
