@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/dark_grey"
     android:layout_height="match_parent">
 
     <!-- Record button  -->
@@ -15,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
         android:textSize="40sp"
+        android:textColor="@color/tvProfile"
         app:layout_constraintBottom_toTopOf="@+id/btnRecord"
         app:layout_constraintEnd_toEndOf="@+id/btnRecord"
         app:layout_constraintStart_toStartOf="@+id/btnRecord" />
@@ -25,8 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="288dp"
         android:drawableStart="@drawable/ic_record"
-        android:drawableLeft="@drawable/ic_record"
-
+        style="@style/ItemButton"
         android:text="Record"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -40,7 +41,7 @@
         android:layout_marginTop="24dp"
         android:text="PLAY"
         android:drawableStart="@drawable/ic_play"
-        android:drawableLeft="@drawable/ic_play"
+        style="@style/ItemButton"
         app:layout_constraintEnd_toEndOf="@+id/btnRecord"
         app:layout_constraintStart_toStartOf="@+id/btnRecord"
         app:layout_constraintTop_toBottomOf="@+id/btnRecord"
@@ -54,8 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:drawableStart="@drawable/ic_submit"
-        android:drawableLeft="@drawable/ic_submit"
         android:text="SUBMIT"
+        style="@style/ItemButton"
         app:layout_constraintEnd_toEndOf="@+id/btnPlay"
         app:layout_constraintStart_toStartOf="@+id/btnPlay"
         app:layout_constraintTop_toBottomOf="@+id/btnPlay" />

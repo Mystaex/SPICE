@@ -38,9 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.main_label));
+        toolbar.setTitleTextColor(getResources().getColor(R.color.titleColor));
+
         setSupportActionBar(toolbar);
 
-        toolbar.setTitle(getString(R.string.main_label));
 
         item1 = findViewById(R.id.item1);
         item2 = findViewById(R.id.item2);
@@ -146,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.item1)
         {
             select.animate().x(0).setDuration(100);
-            item1.setTextColor(Color.BLACK);
+            item1.setTextColor(Color.WHITE);
             item2.setTextColor(def);
             item3.setTextColor(def);
 
@@ -156,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (view.getId() == R.id.item2)
         {
             item1.setTextColor(def);
-            item2.setTextColor(Color.BLACK);
+            item2.setTextColor(Color.WHITE);
             item3.setTextColor(def);
             int size = item2.getWidth();
             select.animate().x(size).setDuration(100);
@@ -167,7 +169,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             item1.setTextColor(def);
             item2.setTextColor(def);
-            item3.setTextColor(Color.BLACK);
+            item3.setTextColor(Color.WHITE);
             int size = item2.getWidth() * 2;
             select.animate().x(size).setDuration(100);
 

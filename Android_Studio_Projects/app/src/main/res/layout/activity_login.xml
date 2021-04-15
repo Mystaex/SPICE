@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_grey"
     tools:context=".ui.login.login">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Login"
         android:textSize="36sp"
+        android:textColor="@color/tvProfile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -30,6 +32,7 @@
         app:counterEnabled="true"
         app:counterMaxLength="45"
         app:errorEnabled="true"
+        style="@style/ItemInputLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -43,6 +46,8 @@
             android:layout_height="wrap_content"
             android:maxLength="45"
             android:hint="Email"
+            style="@style/ItemInputLayout"
+            tools:text="Alexander"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,6 +59,7 @@
         android:paddingTop="10dp"
         android:paddingRight="100dp"
         android:paddingBottom="10dp"
+        style="@style/ItemInputLayout"
         app:counterEnabled="true"
         app:counterMaxLength="45"
         app:errorEnabled="true"
@@ -69,11 +75,13 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:maxLength="45"
+            style="@style/ItemInputLayout"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/submit"
+        style="@style/ItemButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
@@ -86,6 +94,7 @@
 
     <Button
         android:id="@+id/signup_button"
+        style="@style/ItemButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New to Spice?  Create an Account!"

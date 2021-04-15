@@ -268,7 +268,7 @@ public class AudioFragment extends Fragment {
 
     private void showGenrePopUp(String genre){
         AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
-        builder.setTitle("Song Classifier");
+        builder.setTitle(getString(R.string.main_label));
         builder.setMessage("Song genre is: "+genre);
         builder.setPositiveButton("Okay", (dialog, which) -> {
             dialog.dismiss();
