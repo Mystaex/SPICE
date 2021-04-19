@@ -87,12 +87,26 @@ public class GraphsFragment extends Fragment
         xaxis.setDrawLabels(true);
         xaxis.setDrawAxisLine(false);
         xaxis.setValueFormatter(new IndexAxisValueFormatter(labels));
+        xaxis.setTextColor(Color.WHITE);
+        xaxis.setTextSize(10);
+        xaxis.setAxisLineColor(Color.BLACK);
 
         YAxis yAxisLeft = bar.getAxisLeft();
         yAxisLeft.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART);
         yAxisLeft.setDrawGridLines(false);
         yAxisLeft.setDrawAxisLine(false);
         yAxisLeft.setEnabled(false);
+
+        String[] leftAxisLabel = {"Percentages"};
+        YAxis leftAxis = bar.getAxisLeft();
+        leftAxis.setTextColor(Color.BLACK);
+        leftAxis.setTextSize(12);
+        leftAxis.setValueFormatter(new IndexAxisValueFormatter(leftAxisLabel));
+        leftAxis.setAxisLineColor(Color.BLACK);
+        leftAxis.setDrawGridLines(true);
+        leftAxis.setGranularity(2);
+        leftAxis.setLabelCount(8, true);
+        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
 
         bar.getAxisRight().setEnabled(false);
 
@@ -111,8 +125,8 @@ public class GraphsFragment extends Fragment
         barDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
         barDataSet.setColor(Color.RED);
         barDataSet.setHighlightEnabled(true);
-        barDataSet.setHighLightColor(Color.WHITE);
-        barDataSet.setValueTextColor(Color.WHITE);
+        barDataSet.setHighLightColor(Color.BLACK);
+        barDataSet.setValueTextColor(Color.BLACK);
         barDataSet.setDrawValues(false);
         barDataSet.setHighlightEnabled(true);
         dataSets.add(barDataSet);

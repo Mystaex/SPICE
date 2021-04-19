@@ -54,9 +54,10 @@
 
         <ImageView
             android:id="@+id/model_conf_image"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
+            android:layout_width="480dp"
+            android:layout_height="400dp"
             android:scaleType="fitXY"
+            android:background="@color/white"
             android:src="@drawable/model_conf"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -78,8 +79,8 @@
 
         <ImageView
             android:id="@+id/conf_matrix"
-            android:layout_width="250dp"
-            android:layout_height="150dp"
+            android:layout_width="480dp"
+            android:layout_height="400dp"
             android:scaleType="fitXY"
             android:src="@drawable/conf_matrix"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,13 +88,27 @@
             app:layout_constraintTop_toBottomOf="@+id/conf_matrix_text"
             tools:layout_editor_absoluteX="139dp" />
 
+        <TextView
+            android:id="@+id/bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre Percentage Chart:"
+            android:textColor="@color/tvProfile"
+            android:textSize="24sp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conf_matrix"
+            tools:layout_editor_absoluteX="176dp" />
+
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/bar"
             android:layout_width="500dp"
             android:layout_height="400dp"
+            android:background="@color/dark_grey"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/conf_matrix">
+            app:layout_constraintTop_toBottomOf="@+id/bar_text">
         </com.github.mikephil.charting.charts.BarChart>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
