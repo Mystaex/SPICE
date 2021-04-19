@@ -193,7 +193,7 @@ public class AudioFragment extends Fragment {
         return new PullableSource.Default(
                 new AudioRecordConfig.Default(
                         MediaRecorder.AudioSource.MIC, AudioFormat.ENCODING_PCM_16BIT,
-                        AudioFormat.CHANNEL_IN_MONO, 44100
+                        AudioFormat.CHANNEL_IN_MONO, 22050
                 )
         );
     }
