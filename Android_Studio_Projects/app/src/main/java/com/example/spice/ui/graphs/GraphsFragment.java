@@ -19,6 +19,7 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import java.util.ArrayList;
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+import com.github.mikephil.charting.utils.ColorTemplate;
 
 public class GraphsFragment extends Fragment
 {
@@ -59,92 +60,51 @@ public class GraphsFragment extends Fragment
         bar.getDescription().setEnabled(false);
         bar.setPinchZoom(false);
         bar.setDrawGridBackground(true);
-        // empty labels so that the names are spread evenly
-        String[] labels = {"", "Classical", "Rock", "Reggae", "Hip-hop", "Pop", ""};
-        XAxis xAxis = bar.getXAxis();
-        xAxis.setCenterAxisLabels(true);
-        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setDrawGridLines(true);
-        xAxis.setGranularity(1f); // only intervals of 1 day
-        xAxis.setTextColor(Color.WHITE);
-        xAxis.setTextSize(12);
-        xAxis.setAxisLineColor(Color.WHITE);
-        xAxis.setAxisMinimum(1f);
-        xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
 
-        YAxis leftAxis = bar.getAxisLeft();
-        leftAxis.setTextColor(Color.WHITE);
-        leftAxis.setTextSize(12);
-        leftAxis.setAxisLineColor(Color.WHITE);
-        leftAxis.setDrawGridLines(true);
-        leftAxis.setGranularity(2);
-        leftAxis.setLabelCount(8, true);
-        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
-
-        bar.getAxisRight().setEnabled(false);
-        bar.getLegend().setEnabled(false);
-
-        float[] valOne = {10, 20, 30, 40, 50};
-
-        ArrayList<BarEntry> barOne = new ArrayList<>();
-        ArrayList<BarEntry> barTwo = new ArrayList<>();
-        for (int i = 0; i < valOne.length; i++) {
-            barOne.add(new BarEntry(i, valOne[i]));
-        }
-
-        BarDataSet set1 = new BarDataSet(barOne, "barOne");
-        set1.setColor(Color.RED);
-        BarDataSet set2 = new BarDataSet(barTwo, "barTwo");
-        set2.setColor(Color.BLUE);
-
-        set1.setHighlightEnabled(false);
-        set2.setHighlightEnabled(false);
-        set1.setDrawValues(false);
-        set2.setDrawValues(false);
-
-        ArrayList<IBarDataSet> dataSets = new ArrayList<IBarDataSet>();
-        dataSets.add(set1);
-        dataSets.add(set2);
-        BarData data = new BarData(dataSets);
-        float groupSpace = 0.4f;
-        float barSpace = 0f;
-        float barWidth = 0.3f;
-        // (barSpace + barWidth) * 2 + groupSpace = 1
-        data.setBarWidth(barWidth);
-        // so that the entire chart is shown when scrolled from right to left
-        xAxis.setAxisMaximum(labels.length - 1.1f);
-        bar.setData(data);
-        bar.setScaleEnabled(false);
-        bar.setVisibleXRangeMaximum(6f);
-        bar.groupBars(1f, groupSpace, barSpace);
-        bar.invalidate();
+        setData(10);
+        bar.setFitBars(true);
     }
+
+    private void setData(int count)
+    {
+        ArrayList<BarEntry> yVals = new ArrayList<>();
+
+        for(int i = 0; i < count; i++)
+        {
+            float value = (float) (Math.random()*100);
+            yVals.add(new BarEntry(i, (int) value));
+        }
+        /*
+        Key for percentages:
+            Blues
+            Classical
+            Country
+            Disco
+            Hip-Hop
+            Jazz
+            Metal
+            Pop
+            Reggae
+            Rock
+         */
+
+        BarDataSet set = new BarDataSet(yVals,"Data Set");
+        set.setColors(ColorTemplate.MATERIAL_COLORS);
+        set.setDrawValues(true);
+        set.setHighlightEnabled(false);
+        set.setDrawValues(false);
+
+        BarData data = new BarData(set);
+
+        bar.setData(data);
+        bar.invalidate();
+        bar.animateY(500);
+    }
+
 
     /*
-    private ArrayList<BarEntry>dataValues1(){
-        ArrayList<BarEntry>dataVals = new ArrayList<BarEntry>();
-        dataVals.add(new BarEntry(0,80));
-        dataVals.add(new BarEntry(1,60));
-        dataVals.add(new BarEntry(2,40));
-        dataVals.add(new BarEntry(3,20));
-        return dataVals;
-    }
 
     public void GroupBarChart(View view){
-        BarDataSet barDataSet1 = new BarDataSet(dataValues1(),"DataSet 1");
-        barDataSet1.setColor(Color.RED);
-        BarData barData = new BarData();
-        barData.addDataSet(barDataSet1);
-        bar.setData(barData);
-        bar.invalidate();
-    }
-
-     */
-}
-
-/*
-
-public void GroupBarChart(View view){
         bar = (BarChart) view.findViewById(R.id.bar);
         bar.setDrawBarShadow(false);
         bar.getDescription().setEnabled(false);
@@ -212,3 +172,67 @@ public void GroupBarChart(View view){
     }
 
  */
+
+
+
+    /*
+   public void GroupBarChart(View view){
+        bar = (BarChart) view.findViewById(R.id.bar);
+        bar.setDrawBarShadow(false);
+        bar.getDescription().setEnabled(false);
+        bar.setPinchZoom(false);
+        bar.setDrawGridBackground(true);
+        // empty labels so that the names are spread evenly
+        String[] labels = {"", "Classical", "Rock", "Reggae", "Hip-hop", "Pop", ""};
+        XAxis xAxis = bar.getXAxis();
+        xAxis.setCenterAxisLabels(true);
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setDrawGridLines(true);
+        xAxis.setGranularity(1f); // only intervals of 1 day
+        xAxis.setTextColor(Color.WHITE);
+        xAxis.setTextSize(12);
+        xAxis.setAxisLineColor(Color.WHITE);
+        xAxis.setAxisMinimum(1f);
+        xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
+
+        YAxis leftAxis = bar.getAxisLeft();
+        leftAxis.setTextColor(Color.WHITE);
+        leftAxis.setTextSize(12);
+        leftAxis.setAxisLineColor(Color.WHITE);
+        leftAxis.setDrawGridLines(true);
+        leftAxis.setGranularity(2);
+        leftAxis.setLabelCount(8, true);
+        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
+
+        bar.getAxisRight().setEnabled(false);
+        bar.getLegend().setEnabled(false);
+
+        setData(10);
+        bar.setFitBars(true);
+    }
+
+    private void setData(int count)
+    {
+        ArrayList<BarEntry> yVals = new ArrayList<>();
+
+        for(int i = 0; i < count; i++)
+        {
+            float value = (float) (Math.random()*100);
+            yVals.add(new BarEntry(i, (int) value));
+        }
+
+        BarDataSet set = new BarDataSet(yVals,"Data Set");
+        set.setColors(ColorTemplate.MATERIAL_COLORS);
+        set.setDrawValues(true);
+        set.setHighlightEnabled(false);
+        set.setDrawValues(false);
+
+        BarData data = new BarData(set);
+
+        bar.setData(data);
+        bar.invalidate();
+        bar.animateY(500);
+    }
+
+     */
+}

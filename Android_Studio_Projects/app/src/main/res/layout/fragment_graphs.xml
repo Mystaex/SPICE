@@ -97,6 +97,5 @@
         </com.github.mikephil.charting.charts.BarChart>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
 
