@@ -47,7 +47,7 @@
             android:maxLength="45"
             android:hint="Email"
             style="@style/ItemInputLayout"
-            tools:text="Alexander"
+            tools:text="Email"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
 

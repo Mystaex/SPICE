@@ -26,10 +26,8 @@ import android.util.Log;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import androidx.annotation.NonNull;
@@ -41,10 +39,15 @@ import com.google.firebase.auth.FirebaseUser;
 public class login extends AppCompatActivity
 {
     private static final String TAG = "EmailPassword";
+    
+    //Variables TextInputLayout for the email and password textbox strings
     private TextInputLayout mEmail, mPassword;
+
+    //Variables that hold the Submit and the Create Account buttons
     private Button loginBtn, createBtn;
+
+    //The code used to create an instance of authentication so we can authenticate the user
     private FirebaseAuth auth;
-    Member member;
     private String currentUserId;
 
     @Override
@@ -52,28 +55,33 @@ public class login extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //Here we get all of the variables and attach them to the objects in the login xml file
         auth = FirebaseAuth.getInstance();
         mEmail = findViewById(R.id.email);
         mPassword = findViewById(R.id.password);
         loginBtn = findViewById(R.id.submit);
         createBtn = findViewById(R.id.signup_button);
-        member = new Member();
 
+        //If the user clicks the "Create New Account" option they will be sent to that page.
         createBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+                //User will be sent to the SignUp page.
                 Toast.makeText(login.this, "Create New Account", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), Signup.class));
             }
         });
 
+        //If the user clicks the "submit" option to submit their password.
         loginBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
+                //The objects will be made into strings that we can test.
                 String emailValue = mEmail.getEditText().getText().toString().trim();
                 String passwordValue = mPassword.getEditText().getText().toString().trim();
 
@@ -83,6 +91,7 @@ public class login extends AppCompatActivity
                     mEmail.setError("Email is required");
                     return;
                 }
+                //EMAIL LESS THAN 6 CHARAS
                 else if(emailValue.length() < 6)
                 {
                     mEmail.setError("needs to be more than 6 characters");
@@ -120,23 +129,26 @@ public class login extends AppCompatActivity
         });
     }
 
-    // [START on_start_check_user]
+
+    // Function to check if the user is already signed in
     @Override
     public void onStart()
     {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = auth.getCurrentUser();
-        if(currentUser != null){
+        if(currentUser != null)
+        {
             reload();
         }
     }
-    // [END on_start_check_user]
 
 
+    //Here, we are at the point where we know the email and password are correct when it comes to format
+    //so we can now authenticate the passwords to see if they are incorrect in the database or not.
     private void signIn(String email, String password)
     {
-        // [START sign_in_with_email]
+        // Try to Login. If the user entered the wrong information it will say that the authentication failed
         auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>()
                 {
@@ -145,7 +157,7 @@ public class login extends AppCompatActivity
                     {
                         if (task.isSuccessful())
                         {
-                            // Sign in success, update UI with the signed-in user's information
+                            // Sign in success, updateUI and take user to the main page.
                             Log.d(TAG, "signInWithEmail:success");
                             Toast.makeText(login.this, "Login Success", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = auth.getCurrentUser();
@@ -153,22 +165,22 @@ public class login extends AppCompatActivity
                         }
                         else
                         {
-                            // If sign in fails, display a message to the user.
+                            // If sign in fails, display an error message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            mPassword.setError("Incorrect Password");
-                            mEmail.setError("Incorrect Email");
+                            mPassword.setError("Failed Authentication, Password may be incorrect");
+                            mEmail.setError("Failed Authentication, Email may be incorrect");
                             Toast.makeText(login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
                     }
                 });
-        // [END sign_in_with_email]
     }
 
+    //If the user needs to have a verification email sent (may be used in the future if the application is
+    //pushed further.
     private void sendEmailVerification()
     {
         // Send verification email
-        // [START send_email_verification]
         final FirebaseUser user = auth.getCurrentUser();
         user.sendEmailVerification()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>()
@@ -179,11 +191,14 @@ public class login extends AppCompatActivity
                         // Email sent
                     }
                 });
-        // [END send_email_verification]
     }
 
-    private void reload() { }
+    private void reload()
+    {
+        Toast.makeText(login.this, "Please enter login information to access the application", Toast.LENGTH_SHORT).show();
+    }
 
+    //This function will send the user to the main recording page if they pass all of the tests and are able to login.
     private void updateUI(FirebaseUser user)
     {
         if(user != null)

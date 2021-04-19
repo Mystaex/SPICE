@@ -44,13 +44,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/item1"
+                android:id="@+id/tab1"
                 android:layout_weight="1"
                 android:text="@string/audio_label"
                 android:textColor="@color/white"
                 android:gravity="center"/>
             <TextView
-                android:id="@+id/item2"
+                android:id="@+id/tab2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -58,7 +58,7 @@
                 android:text="@string/graph_label"
                 android:gravity="center"/>
             <TextView
-                android:id="@+id/item3"
+                android:id="@+id/tab3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

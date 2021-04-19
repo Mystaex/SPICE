@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.spice.R;
@@ -71,6 +70,7 @@ public class ManageAccount extends AppCompatActivity
                 currentUserId = user.getUid();
                 ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId);
 
+                //If the values are not empty we update them, but if they are empty we do not update anything.
                 if(!TextUtils.isEmpty(nameValue))
                 {
                     ref.child("name").setValue(nameValue);
@@ -83,6 +83,8 @@ public class ManageAccount extends AppCompatActivity
                 {
                     ref.child("genre").setValue(genreValue);
                 }
+
+                //let the user know their account editing process completed
                 Toast.makeText(ManageAccount.this, "Account Edited", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();

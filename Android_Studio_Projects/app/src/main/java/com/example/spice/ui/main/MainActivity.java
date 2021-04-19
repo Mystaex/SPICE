@@ -27,9 +27,9 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, Toolbar.OnMenuItemClickListener
 {
+    //Here we initialize the tab variables that will be used for each fragment
     ColorStateList def;
-    TextView item1, item2, item3, select;
-
+    TextView tab1, tab2, tab3, select;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -37,23 +37,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //using a toolbar and setting the toolbar as SPICE CLASSIFIER
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle(getString(R.string.main_label));
-        toolbar.setTitleTextColor(getResources().getColor(R.color.titleColor));
+        //toolbar.setTitleTextColor(getResources().getColor(R.color.titleColor));
+        toolbar.setTitleTextColor(Color.WHITE);
 
         setSupportActionBar(toolbar);
 
 
-        item1 = findViewById(R.id.item1);
-        item2 = findViewById(R.id.item2);
-        item3 = findViewById(R.id.item3);
+        tab1 = findViewById(R.id.tab1);
+        tab2 = findViewById(R.id.tab2);
+        tab3 = findViewById(R.id.tab3);
 
-        item1.setOnClickListener(this);
-        item2.setOnClickListener(this);
-        item3.setOnClickListener(this);
+        tab1.setOnClickListener(this);
+        tab2.setOnClickListener(this);
+        tab3.setOnClickListener(this);
 
         select = findViewById(R.id.select);
-        def = item2.getTextColors();
+        def = tab2.getTextColors();
     }
 
     //Method that implements additional options menu
@@ -72,6 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     {
         int id = item.getItemId();
 
+        //If the user chooses the "Logout" option in the 3-Dot Menu
         if (item.getItemId() == R.id.item_logout)
         {
             //implements functionality when is logout
@@ -80,19 +83,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             finish(); // Terminates activity
             return true;
         }
+        //If the user chooses the "change password" option in the 3-dot menu which will direct them to the specified page
         else if(item.getItemId() == R.id.item_password)
         {
             startActivity(new Intent(getApplicationContext(), ChangePassword.class));
             finish(); // Terminates activity
             return true;
         }
+        //If the user chooses the "Edit Account" option in the 3-dot menu which will direct them to the specified page
         else if(item.getItemId() == R.id.item_edit)
         {
             startActivity(new Intent(getApplicationContext(), ManageAccount.class));
             finish(); // Terminates activity
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -107,70 +111,74 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    //Functions for if the user exits the application and enters back into the application
     @Override
     protected void onResume()
     {
         super.onResume();
     }
 
-
+    //Functions for if the user exits the application and enters back into the application
     @Override
     protected void onRestart()
     {
         super.onRestart();
     }
 
-
+    //Functions for if the user exits the application and enters back into the application
     @Override
     protected void onPause()
     {
         super.onPause();
     }
 
-
+    //Functions for if the user exits the application and enters back into the application
     @Override
     protected void onStop()
     {
         super.onStop();
     }
 
-
+    //Functions for if the user exits the application and enters back into the application
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
     }
 
-    //OnClickListener method, listen when some view was clicked
+    //OnClickListener method, listen to see if one of the tabs was pressed
     @Override
     public void onClick(View view)
     {
-        if (view.getId() == R.id.item1)
+        //The first tab is the Recording Page
+        if (view.getId() == R.id.tab1)
         {
             select.animate().x(0).setDuration(100);
-            item1.setTextColor(Color.WHITE);
-            item2.setTextColor(def);
-            item3.setTextColor(def);
+            tab1.setTextColor(Color.WHITE);
+            tab2.setTextColor(def);
+            tab3.setTextColor(def);
 
             setFragment(AudioFragment.newInstance());
 
         }
-        else if (view.getId() == R.id.item2)
+        //The second tab is the Graphing page
+        else if (view.getId() == R.id.tab2)
         {
-            item1.setTextColor(def);
-            item2.setTextColor(Color.WHITE);
-            item3.setTextColor(def);
-            int size = item2.getWidth();
+            tab1.setTextColor(def);
+            tab2.setTextColor(Color.WHITE);
+            tab3.setTextColor(def);
+            int size = tab2.getWidth();
             select.animate().x(size).setDuration(100);
 
             setFragment(GraphsFragment.newInstance());
         }
-        else if (view.getId() == R.id.item3)
+        //The third tab is the profile page
+        else if (view.getId() == R.id.tab3)
         {
-            item1.setTextColor(def);
-            item2.setTextColor(def);
-            item3.setTextColor(Color.WHITE);
-            int size = item2.getWidth() * 2;
+            tab1.setTextColor(def);
+            tab2.setTextColor(def);
+            tab3.setTextColor(Color.WHITE);
+            int size = tab2.getWidth() * 2;
             select.animate().x(size).setDuration(100);
 
             setFragment(ProfileFragment.newInstance());
@@ -189,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    //getGroupId()
+    //Makes sure that no other action can be done until we move on to the next fragment
     @Override
     public boolean onMenuItemClick(MenuItem item)
     {

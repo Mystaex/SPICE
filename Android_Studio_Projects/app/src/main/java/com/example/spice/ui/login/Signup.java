@@ -9,26 +9,18 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.spice.R;
 import com.example.spice.ui.main.MainActivity;
-import com.google.android.gms.common.util.NumberUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class Signup extends AppCompatActivity
 {
@@ -37,7 +29,7 @@ public class Signup extends AppCompatActivity
     private TextInputLayout mEmail, mPassword, mPasswordConfirm, mUtaid;
     Button signupBtn, backBtn;
 
-    //initializing database
+    //initializing database variables
     private FirebaseAuth auth;
     DatabaseReference ref;
     String currentUserId;
@@ -112,37 +104,19 @@ public class Signup extends AppCompatActivity
                     mPassword.setError("Password is required");
                     return;
                 }
-                //EMPTY CONFIRM PASSWORD
-                if(TextUtils.isEmpty(passwordConfirmValue))
-                {
-                    mPasswordConfirm.setError("Passwords are not the same");
-                    return;
-                }
-                //PASSWORD LESS THAN 6 CHARAS
-                if(passwordValue.length() < 6)
-                {
-                    mPassword.setError("Password must be longer than 6 characters");
-                    return;
-                }
-                //CONFIRM PASSWORD LESS THAN 6 CHARAS
-                if(passwordConfirmValue.length() < 6)
-                {
-                    mPasswordConfirm.setError("Password must be longer than 6 characters");
-                    return;
-                }
                 //PASSWORD AND CONFIRM PASSWORD NOT THE SAME
                 if(!passwordValue.equals(passwordConfirmValue))
                 {
                     mPasswordConfirm.setError("Must be the same as the password");
                     return;
                 }
-                //EMPTY CONFIRM PASSWORD
+                //EMPTY UTA ID
                 if(TextUtils.isEmpty(utaidValue))
                 {
                     mUtaid.setError("UTA ID Number required");
                     return;
                 }
-                //PASSWORD LESS THAN 6 CHARAS
+                //UTA ID LESS THAN OR GREATER THAN 10 CHARAS
                 if(utaidValue.length() != 10)
                 {
                     mUtaid.setError("ID Number must have a length of 10");
@@ -160,6 +134,7 @@ public class Signup extends AppCompatActivity
         });
     }
 
+    //Function to test if the string inputted into this function is a number or not.
     public static boolean isNumber(String str)
     {
         try
@@ -173,7 +148,7 @@ public class Signup extends AppCompatActivity
         }
     }
 
-
+    //The function that will create an account if the user information passes the if statements above.
     private void createAccount(String email, String password, String utaid)
     {
         // [START create_user_with_email]
@@ -188,12 +163,18 @@ public class Signup extends AppCompatActivity
                         {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
+
+                            //Get the user that has just added their information to authentication system
                             FirebaseUser user = auth.getCurrentUser();
                             currentUserId = user.getUid();
+
+                            //set values in the object to the user's values
                             member.setutaid(utaid);
                             member.setpassword(password);
                             member.setemail(email);
                             member.setuserid(currentUserId);
+
+                            //set all of the values in firebase realtime database
                             ref = FirebaseDatabase.getInstance().getReference().child("Member");
                             ref.child(currentUserId).setValue(member);
                             updateUI(user);
@@ -212,6 +193,7 @@ public class Signup extends AppCompatActivity
     }
 
 
+    //sends the user to the next page or doesn't if their signup fails.
     private void updateUI(FirebaseUser user)
     {
         if(user != null)

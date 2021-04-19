@@ -1,5 +1,6 @@
 package com.example.spice.ui.login;
 
+//Used in the Creating Account Page. This is the inputted object that will be in firebase database.
 public class Member
 {
     private String userid;
@@ -9,11 +10,14 @@ public class Member
     private String profession;
     private String utaid;
     private String name;
+
+    //Empty Constructor
     public Member()
     {
 
     }
 
+    //Constructor that sets values when at least one attribute is entered.
     public Member(String userid, String email, String password, String genre, String profession, String utaid, String name)
     {
         this.userid = userid;
@@ -24,6 +28,8 @@ public class Member
         this.utaid = utaid;
         this.name = name;
     }
+
+    //getter and setter functions
     public String getuserid(){return userid;}
     public void setuserid(String userid){this.userid = userid;}
     public String getemail(){return email;}

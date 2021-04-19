@@ -45,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="45"
+            style="@style/ItemInputLayout"
             android:hint="Email"
             android:inputType="textEmailAddress"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -72,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="45"
+            style="@style/ItemInputLayout"
             android:hint="Password"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -100,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="45"
+            style="@style/ItemInputLayout"
             android:hint="Confirm Password"
             android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -128,6 +131,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="10"
+            style="@style/ItemInputLayout"
             android:hint="UTA ID"
             android:inputType="textPersonName"/>
     </com.google.android.material.textfield.TextInputLayout>
