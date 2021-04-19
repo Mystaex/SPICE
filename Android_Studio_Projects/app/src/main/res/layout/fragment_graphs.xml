@@ -1,21 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:background="@color/dark_grey"
-    tools:context=".ui.graphs.GraphsFragment">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Under Construction"
-        android:textColor="@color/tvProfile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@color/dark_grey"
+        tools:context=".ui.graphs.GraphsFragment">
+
+        <ImageView
+            android:id="@+id/graph_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/graph_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Genre: "
+            android:textColor="@color/tvProfile"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graph_imageview" />
+
+        <TextView
+            android:id="@+id/model_information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Model information:\n-Cost function for cross-validation data - 51%\n-Accuracy of cross-validation data- 83%\n-Structure - Dense Neural Network\n\nModel Complexity Information:\n-Dense Layer - 512 nodes, .35 drop out\n-Dense Layer - 256 nodes, .25 drop out\n-Dense Layer - 128 nodes, .2 drop out\n-Dense Layer - 64 nodes, .15 drop out\n-Dense Layer - 32 nodes, .1 drop out\n-Dense Layer - 10 nodes (output), activation = softmax"
+            android:textColor="@color/tvProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graph_genre" />
+
+        <TextView
+            android:id="@+id/model_conf_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="20dp"
+            android:textColor="@color/tvProfile"
+            android:text="Model Configuration:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_information_text" />
+
+        <ImageView
+            android:id="@+id/model_conf_image"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/model_conf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_conf_text"
+            tools:layout_editor_absoluteX="141dp" />
+
+        <TextView
+            android:id="@+id/conf_matrix_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration Matrix:"
+            android:textColor="@color/tvProfile"
+            android:textSize="24sp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_conf_image"
+            tools:layout_editor_absoluteX="176dp" />
+
+        <ImageView
+            android:id="@+id/conf_matrix"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/conf_matrix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conf_matrix_text"
+            tools:layout_editor_absoluteX="139dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
