@@ -5,30 +5,23 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 
 import com.example.spice.R;
 import com.github.mikephil.charting.charts.BarChart;
-import com.github.mikephil.charting.components.AxisBase;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
-import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
-import com.github.mikephil.charting.utils.ColorTemplate;
-import com.github.mikephil.charting.data.BarDataSet;
 
 public class GraphsFragment extends Fragment
 {
@@ -81,11 +74,11 @@ public class GraphsFragment extends Fragment
         String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
 
         XAxis xaxis = bar.getXAxis();
-        xaxis.setDrawGridLines(false);
+        xaxis.setDrawGridLines(true);
         xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xaxis.setGranularity(1f);
         xaxis.setDrawLabels(true);
-        xaxis.setDrawAxisLine(false);
+        xaxis.setDrawAxisLine(true);
         xaxis.setValueFormatter(new IndexAxisValueFormatter(labels));
         xaxis.setTextColor(Color.WHITE);
         xaxis.setTextSize(10);
@@ -93,16 +86,14 @@ public class GraphsFragment extends Fragment
 
         YAxis yAxisLeft = bar.getAxisLeft();
         yAxisLeft.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART);
-        yAxisLeft.setDrawGridLines(false);
-        yAxisLeft.setDrawAxisLine(false);
-        yAxisLeft.setEnabled(false);
+        yAxisLeft.setDrawGridLines(true);
+        yAxisLeft.setDrawAxisLine(true);
+        yAxisLeft.setEnabled(true);
 
-        String[] leftAxisLabel = {"Percentages"};
         YAxis leftAxis = bar.getAxisLeft();
-        leftAxis.setTextColor(Color.BLACK);
+        leftAxis.setTextColor(Color.WHITE);
         leftAxis.setTextSize(12);
-        leftAxis.setValueFormatter(new IndexAxisValueFormatter(leftAxisLabel));
-        leftAxis.setAxisLineColor(Color.BLACK);
+        leftAxis.setAxisLineColor(Color.WHITE);
         leftAxis.setDrawGridLines(true);
         leftAxis.setGranularity(2);
         leftAxis.setLabelCount(8, true);
@@ -111,6 +102,11 @@ public class GraphsFragment extends Fragment
         bar.getAxisRight().setEnabled(false);
 
         Legend legend = bar.getLegend();
+        legend.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
+        legend.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
+        legend.setOrientation(Legend.LegendOrientation.VERTICAL);
+        legend.setDrawInside(false);
+        legend.setTextColor(Color.WHITE);
         legend.setEnabled(false);
 
         ArrayList<BarEntry> valueSet1 = new ArrayList<BarEntry>();
@@ -214,65 +210,4 @@ public class GraphsFragment extends Fragment
  */
 
 
-
-    /*
-   public void GroupBarChart(View view){
-        bar = (BarChart) view.findViewById(R.id.bar);
-        bar.setDrawBarShadow(false);
-        bar.getDescription().setEnabled(false);
-        bar.setPinchZoom(false);
-        bar.setDrawGridBackground(true);
-        // empty labels so that the names are spread evenly
-        String[] labels = {"", "Classical", "Rock", "Reggae", "Hip-hop", "Pop", ""};
-        XAxis xAxis = bar.getXAxis();
-        xAxis.setCenterAxisLabels(true);
-        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setDrawGridLines(true);
-        xAxis.setGranularity(1f); // only intervals of 1 day
-        xAxis.setTextColor(Color.WHITE);
-        xAxis.setTextSize(12);
-        xAxis.setAxisLineColor(Color.WHITE);
-        xAxis.setAxisMinimum(1f);
-        xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
-
-        YAxis leftAxis = bar.getAxisLeft();
-        leftAxis.setTextColor(Color.WHITE);
-        leftAxis.setTextSize(12);
-        leftAxis.setAxisLineColor(Color.WHITE);
-        leftAxis.setDrawGridLines(true);
-        leftAxis.setGranularity(2);
-        leftAxis.setLabelCount(8, true);
-        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
-
-        bar.getAxisRight().setEnabled(false);
-        bar.getLegend().setEnabled(false);
-
-        setData(10);
-        bar.setFitBars(true);
-    }
-
-    private void setData(int count)
-    {
-        ArrayList<BarEntry> yVals = new ArrayList<>();
-
-        for(int i = 0; i < count; i++)
-        {
-            float value = (float) (Math.random()*100);
-            yVals.add(new BarEntry(i, (int) value));
-        }
-
-        BarDataSet set = new BarDataSet(yVals,"Data Set");
-        set.setColors(ColorTemplate.MATERIAL_COLORS);
-        set.setDrawValues(true);
-        set.setHighlightEnabled(false);
-        set.setDrawValues(false);
-
-        BarData data = new BarData(set);
-
-        bar.setData(data);
-        bar.invalidate();
-        bar.animateY(500);
-    }
-
-     */
 }
