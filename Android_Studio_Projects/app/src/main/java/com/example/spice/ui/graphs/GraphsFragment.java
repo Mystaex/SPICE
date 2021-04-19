@@ -5,21 +5,30 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.example.spice.R;
 import com.github.mikephil.charting.charts.BarChart;
+import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.formatter.IAxisValueFormatter;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import java.util.ArrayList;
+import java.util.List;
+
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.data.BarDataSet;
 
 public class GraphsFragment extends Fragment
 {
@@ -60,6 +69,8 @@ public class GraphsFragment extends Fragment
         bar.getDescription().setEnabled(false);
         bar.setPinchZoom(false);
         bar.setDrawGridBackground(true);
+        bar.setDrawValueAboveBar(true);
+        bar.setMaxVisibleValueCount(10);
 
         setData(10);
         bar.setFitBars(true);
@@ -67,41 +78,56 @@ public class GraphsFragment extends Fragment
 
     private void setData(int count)
     {
-        ArrayList<BarEntry> yVals = new ArrayList<>();
+        String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
 
-        for(int i = 0; i < count; i++)
-        {
-            float value = (float) (Math.random()*100);
-            yVals.add(new BarEntry(i, (int) value));
+        XAxis xaxis = bar.getXAxis();
+        xaxis.setDrawGridLines(false);
+        xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xaxis.setGranularity(1f);
+        xaxis.setDrawLabels(true);
+        xaxis.setDrawAxisLine(false);
+        xaxis.setValueFormatter(new IndexAxisValueFormatter(labels));
+
+        YAxis yAxisLeft = bar.getAxisLeft();
+        yAxisLeft.setPosition(YAxis.YAxisLabelPosition.INSIDE_CHART);
+        yAxisLeft.setDrawGridLines(false);
+        yAxisLeft.setDrawAxisLine(false);
+        yAxisLeft.setEnabled(false);
+
+        bar.getAxisRight().setEnabled(false);
+
+        Legend legend = bar.getLegend();
+        legend.setEnabled(false);
+
+        ArrayList<BarEntry> valueSet1 = new ArrayList<BarEntry>();
+
+        for (int i = 0; i < 10; ++i) {
+            BarEntry entry = new BarEntry(i, (i+1)*10);
+            valueSet1.add(entry);
         }
-        /*
-        Key for percentages:
-            Blues
-            Classical
-            Country
-            Disco
-            Hip-Hop
-            Jazz
-            Metal
-            Pop
-            Reggae
-            Rock
-         */
 
-        BarDataSet set = new BarDataSet(yVals,"Data Set");
-        set.setColors(ColorTemplate.MATERIAL_COLORS);
-        set.setDrawValues(true);
-        set.setHighlightEnabled(false);
-        set.setDrawValues(false);
+        List<IBarDataSet> dataSets = new ArrayList<>();
+        BarDataSet barDataSet = new BarDataSet(valueSet1, "Data Set");
+        barDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
+        barDataSet.setColor(Color.RED);
+        barDataSet.setHighlightEnabled(true);
+        barDataSet.setHighLightColor(Color.WHITE);
+        barDataSet.setValueTextColor(Color.WHITE);
+        barDataSet.setDrawValues(false);
+        barDataSet.setHighlightEnabled(true);
+        dataSets.add(barDataSet);
 
-        BarData data = new BarData(set);
+        bar.getDescription().setText("Classifier Percentages");
+
+        bar.getXAxis().setLabelCount(barDataSet.getEntryCount());
+        bar.getDescription().setTextSize(16);
+        bar.getDescription().setTextColor(Color.WHITE);
+        BarData data = new BarData(barDataSet);
 
         bar.setData(data);
         bar.invalidate();
         bar.animateY(500);
     }
-
-
     /*
 
     public void GroupBarChart(View view){
