@@ -23,6 +23,7 @@ package com.example.spice.ui.audio_submission;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.media.AudioFormat;
 import android.media.MediaPlayer;
@@ -31,6 +32,7 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,10 +40,23 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.Toast;
 import com.example.spice.R;
+import com.example.spice.ui.graphs.GraphsFragment;
 import com.github.hiteshsondhi88.libffmpeg.FFmpeg;
+
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.lang.reflect.Array;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 import java.util.Map;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 import android.widget.TextView;
 import com.chaquo.python.PyObject;
@@ -54,7 +69,9 @@ import omrecorder.PullTransport;
 import omrecorder.PullableSource;
 import omrecorder.Recorder;
 import com.example.spice.ui.model_decision.GenreClassifier;
+import com.github.mikephil.charting.data.BarEntry;
 
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class AudioFragment extends Fragment {
@@ -70,7 +87,7 @@ public class AudioFragment extends Fragment {
     Recorder recorder;
 
     private int PERMISSION_CODE = 1;        //Random positive integer meaning permission granted
-    private long minimumTimeMS = 3000;      //Minimum length in ms of recorded audio
+    private long minimumTimeMS = 5000;      //Minimum length in ms of recorded audio
 
     boolean recording = false;              //Decider of recording button switch
     boolean playing = false;                //Decider of playing button switch
@@ -247,7 +264,7 @@ public class AudioFragment extends Fragment {
             stopPlay();
 
         }
-        String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath();
+        String filepath = getActivity().getExternalFilesDir("/").getAbsolutePath() + "/" + "input.txt";
 
         if (!Python.isStarted()) {
             Python.start(new AndroidPlatform(getActivity()));
@@ -261,9 +278,24 @@ public class AudioFragment extends Fragment {
         float[] features = pyobj.callAttr("getArray").toJava(float[].class);
 
         GenreClassifier genreClassifier = new GenreClassifier(getContext());
-
         Map<String, Float> map = genreClassifier.predict(features);
+
+        Float classifyArray[] = new Float[]{0f,0f,0f,0f,0f,0f,0f,0f,0f,0f};
+
+        String classifyString;
+        if(map != null)
+        {
+            int i = 0;
+            for (Float value : map.values())
+            {
+                classifyArray[i] = value;
+                i++;
+            }
+        }
+        GraphsFragment newGraph = new GraphsFragment(classifyArray);
         showGenrePopUp(genreClassifier.getMaxProbabilityString());
+
+
     }
 
     private void showGenrePopUp(String genre){

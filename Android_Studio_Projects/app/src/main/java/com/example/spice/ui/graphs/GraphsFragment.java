@@ -32,9 +32,23 @@ public class GraphsFragment extends Fragment
 
     private String mParam1;
     private String mParam2;
+    public Float map[] = new Float[]{1f,1f,1f,1f,1f,1f,1f,1f,1f,1f};
 
     public GraphsFragment() { }
 
+    public GraphsFragment(Float array[])
+    {
+        map[0] = array[0];
+        map[1] = array[1];
+        map[2] = array[2];
+        map[3] = array[3];
+        map[4] = array[4];
+        map[5] = array[5];
+        map[6] = array[6];
+        map[7] = array[7];
+        map[8] = array[8];
+        map[9] = array[9];
+    }
 
     public static GraphsFragment newInstance()
     {
@@ -69,7 +83,7 @@ public class GraphsFragment extends Fragment
         bar.setFitBars(true);
     }
 
-    private void setData(int count)
+    public void setData(int count)
     {
         String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
 
@@ -92,7 +106,7 @@ public class GraphsFragment extends Fragment
 
         YAxis leftAxis = bar.getAxisLeft();
         leftAxis.setTextColor(Color.WHITE);
-        leftAxis.setTextSize(12);
+        leftAxis.setTextSize(8);
         leftAxis.setAxisLineColor(Color.WHITE);
         leftAxis.setDrawGridLines(true);
         leftAxis.setGranularity(2);
@@ -110,10 +124,29 @@ public class GraphsFragment extends Fragment
         legend.setEnabled(false);
 
         ArrayList<BarEntry> valueSet1 = new ArrayList<BarEntry>();
+        for (Float value : map)
+        {
+            System.out.println("---");
+            System.out.println(value);
+        }
 
-        for (int i = 0; i < 10; ++i) {
-            BarEntry entry = new BarEntry(i, (i+1)*10);
-            valueSet1.add(entry);
+        if(map != null) {
+            int i = 0;
+            for (Float value : map)
+            {
+                System.out.println(value);
+                BarEntry entry = new BarEntry(i, value*100);
+                valueSet1.add(entry);
+                i++;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < 10; ++i)
+            {
+                BarEntry entry = new BarEntry(i, 0);
+                valueSet1.add(entry);
+            }
         }
 
         List<IBarDataSet> dataSets = new ArrayList<>();
@@ -135,6 +168,7 @@ public class GraphsFragment extends Fragment
         BarData data = new BarData(barDataSet);
 
         bar.setData(data);
+        bar.notifyDataSetChanged();
         bar.invalidate();
         bar.animateY(500);
     }

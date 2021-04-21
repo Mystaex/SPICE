@@ -54,7 +54,7 @@
 
         <ImageView
             android:id="@+id/model_conf_image"
-            android:layout_width="480dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp"
             android:scaleType="fitXY"
             android:background="@color/white"
@@ -79,7 +79,7 @@
 
         <ImageView
             android:id="@+id/conf_matrix"
-            android:layout_width="480dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp"
             android:scaleType="fitXY"
             android:src="@drawable/conf_matrix"
@@ -103,7 +103,7 @@
 
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/bar"
-            android:layout_width="500dp"
+            android:layout_width="match_parent"
             android:layout_height="400dp"
             android:background="@color/dark_grey"
             app:layout_constraintEnd_toEndOf="parent"
