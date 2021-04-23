@@ -95,7 +95,6 @@ public class ChangePassword extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(ChangePassword.this, "Back to Profile Page", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
@@ -186,7 +185,6 @@ public class ChangePassword extends AppCompatActivity
                                 //Tell the user that the information they entered isn't correct as it was not able to pass the verification process.
                                 mEmail.setError("Failed Authentication, Email may be incorrect");
                                 mOld.setError("Failed Authentication, Old Password may be incorrect");
-                                Toast.makeText(ChangePassword.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

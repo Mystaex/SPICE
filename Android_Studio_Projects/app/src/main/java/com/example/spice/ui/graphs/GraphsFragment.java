@@ -1,15 +1,20 @@
 package com.example.spice.ui.graphs;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.spice.R;
+import com.example.spice.ui.login.login;
+import com.example.spice.ui.profile.ChangePassword;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
@@ -22,33 +27,43 @@ import java.util.List;
 
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.EmailAuthProvider;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 
 public class GraphsFragment extends Fragment
 {
     BarChart bar;
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    private String mParam1;
-    private String mParam2;
-    public Float map[] = new Float[]{1f,1f,1f,1f,1f,1f,1f,1f,1f,1f};
+    private FirebaseAuth auth;
+    private String currentUserId;
+    private FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    private DatabaseReference ref;
+
+    public String Blues;
+    public String Classical;
+    public String Country;
+    public String Disco;
+    public String HipHop;
+    public String Jazz;
+    public String Metal;
+    public String Pop;
+    public String Reggae;
+    public String Rock;
+
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    public Float map[];
 
     public GraphsFragment() { }
-
-    public GraphsFragment(Float array[])
-    {
-        map[0] = array[0];
-        map[1] = array[1];
-        map[2] = array[2];
-        map[3] = array[3];
-        map[4] = array[4];
-        map[5] = array[5];
-        map[6] = array[6];
-        map[7] = array[7];
-        map[8] = array[8];
-        map[9] = array[9];
-    }
 
     public static GraphsFragment newInstance()
     {
@@ -71,6 +86,7 @@ public class GraphsFragment extends Fragment
 
 
     public void GroupBarChart(View view){
+
         bar = (BarChart) view.findViewById(R.id.bar);
         bar.setDrawBarShadow(false);
         bar.getDescription().setEnabled(false);
@@ -79,11 +95,11 @@ public class GraphsFragment extends Fragment
         bar.setDrawValueAboveBar(true);
         bar.setMaxVisibleValueCount(10);
 
-        setData(10);
+        setData();
         bar.setFitBars(true);
     }
 
-    public void setData(int count)
+    public void setData()
     {
         String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
 
@@ -123,34 +139,88 @@ public class GraphsFragment extends Fragment
         legend.setTextColor(Color.WHITE);
         legend.setEnabled(false);
 
-        ArrayList<BarEntry> valueSet1 = new ArrayList<BarEntry>();
-        for (Float value : map)
-        {
-            System.out.println("---");
-            System.out.println(value);
-        }
+        ArrayList<BarEntry> valueSet = new ArrayList<BarEntry>();
 
-        if(map != null) {
-            int i = 0;
-            for (Float value : map)
-            {
-                System.out.println(value);
-                BarEntry entry = new BarEntry(i, value*100);
-                valueSet1.add(entry);
-                i++;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < 10; ++i)
-            {
-                BarEntry entry = new BarEntry(i, 0);
-                valueSet1.add(entry);
-            }
-        }
+        BarEntry entry = new BarEntry(0, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(1, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(2, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(3, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(4, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(5, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(6, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(7, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(8, 0);
+        valueSet.add(entry);
+        entry = new BarEntry(9, 0);
+        valueSet.add(entry);
+
+        /*
+
+        currentUserId = user.getUid();
+        FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph")
+                .addValueEventListener(new ValueEventListener()
+                {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+                    {
+                        Blues = dataSnapshot.child("Blues").getValue().toString();
+                        Classical = dataSnapshot.child("Classical").getValue().toString();
+                        Country = dataSnapshot.child("Country").getValue().toString();
+                        Disco = dataSnapshot.child("Disco").getValue().toString();
+                        HipHop = dataSnapshot.child("Hip-Hop").getValue().toString();
+                        Jazz = dataSnapshot.child("Jazz").getValue().toString();
+                        Metal = dataSnapshot.child("Metal").getValue().toString();
+                        Pop = dataSnapshot.child("Pop").getValue().toString();
+                        Reggae = dataSnapshot.child("Reggae").getValue().toString();
+                        Rock = dataSnapshot.child("Rock").getValue().toString();
+                        System.out.print(Blues);
+                        System.out.print(Blues);
+                        System.out.print(Blues);
+                        System.out.print(Blues);
+                        System.out.print(Blues);
+                        System.out.print(Blues);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError)
+                    {
+                    }
+                });
+
+        BarEntry entry = new BarEntry(0, Float.valueOf(Blues)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(1, Float.valueOf(Classical)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(2, Float.valueOf(Country)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(3, Float.valueOf(Disco)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(4, Float.valueOf(HipHop)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(5, Float.valueOf(Jazz)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(6, Float.valueOf(Metal)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(7, Float.valueOf(Pop)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(8, Float.valueOf(Reggae)*100);
+        valueSet.add(entry);
+        entry = new BarEntry(9, Float.valueOf(Rock)*100);
+        valueSet.add(entry);
+
+         */
+
 
         List<IBarDataSet> dataSets = new ArrayList<>();
-        BarDataSet barDataSet = new BarDataSet(valueSet1, "Data Set");
+        BarDataSet barDataSet = new BarDataSet(valueSet, "Data Set");
         barDataSet.setAxisDependency(YAxis.AxisDependency.LEFT);
         barDataSet.setColor(Color.RED);
         barDataSet.setHighlightEnabled(true);
@@ -172,6 +242,7 @@ public class GraphsFragment extends Fragment
         bar.invalidate();
         bar.animateY(500);
     }
+
     /*
 
     public void GroupBarChart(View view){
@@ -242,6 +313,5 @@ public class GraphsFragment extends Fragment
     }
 
  */
-
 
 }

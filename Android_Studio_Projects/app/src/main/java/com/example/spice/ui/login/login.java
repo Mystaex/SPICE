@@ -135,12 +135,6 @@ public class login extends AppCompatActivity
     public void onStart()
     {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = auth.getCurrentUser();
-        if(currentUser != null)
-        {
-            reload();
-        }
     }
 
 
@@ -159,7 +153,6 @@ public class login extends AppCompatActivity
                         {
                             // Sign in success, updateUI and take user to the main page.
                             Log.d(TAG, "signInWithEmail:success");
-                            Toast.makeText(login.this, "Login Success", Toast.LENGTH_SHORT).show();
                             FirebaseUser user = auth.getCurrentUser();
                             updateUI(user);
                         }
@@ -167,9 +160,8 @@ public class login extends AppCompatActivity
                         {
                             // If sign in fails, display an error message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            mPassword.setError("Failed Authentication, Password may be incorrect");
-                            mEmail.setError("Failed Authentication, Email may be incorrect");
-                            Toast.makeText(login.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            mPassword.setError("Password may be incorrect");
+                            mEmail.setError("Email may be incorrect");
                             updateUI(null);
                         }
                     }
@@ -191,11 +183,6 @@ public class login extends AppCompatActivity
                         // Email sent
                     }
                 });
-    }
-
-    private void reload()
-    {
-        Toast.makeText(login.this, "Please enter login information to access the application", Toast.LENGTH_SHORT).show();
     }
 
     //This function will send the user to the main recording page if they pass all of the tests and are able to login.

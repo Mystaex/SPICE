@@ -58,7 +58,6 @@ public class Signup extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(Signup.this, "Back to Login Page", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), login.class));
             }
         });
@@ -177,14 +176,54 @@ public class Signup extends AppCompatActivity
                             //set all of the values in firebase realtime database
                             ref = FirebaseDatabase.getInstance().getReference().child("Member");
                             ref.child(currentUserId).setValue(member);
+
+                            ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
+
+                            int i = 0;
+                            for (i = 0; i < 10; i++)
+                            {
+                                switch(i) {
+                                    case 0:
+                                        ref.child("Blues").setValue(0);
+                                        break;
+                                    case 1:
+                                        ref.child("Classical").setValue(0);
+                                        break;
+                                    case 2:
+                                        ref.child("Country").setValue(0);
+                                        break;
+                                    case 3:
+                                        ref.child("Disco").setValue(0);
+                                        break;
+                                    case 4:
+                                        ref.child("Hip-Hop").setValue(0);
+                                        break;
+                                    case 5:
+                                        ref.child("Jazz").setValue(0);
+                                        break;
+                                    case 6:
+                                        ref.child("Metal").setValue(0);
+                                        break;
+                                    case 7:
+                                        ref.child("Pop").setValue(0);
+                                        break;
+                                    case 8:
+                                        ref.child("Reggae").setValue(0);
+                                        break;
+                                    case 9:
+                                        ref.child("Rock").setValue(0);
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+
                             updateUI(user);
                         }
                         else
                         {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(Signup.this, "Authentication failed.",
-                                    Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
                     }

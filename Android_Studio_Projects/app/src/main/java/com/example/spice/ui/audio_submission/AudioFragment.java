@@ -32,6 +32,7 @@ import android.os.Bundle;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import android.os.SystemClock;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -70,6 +71,10 @@ import omrecorder.PullableSource;
 import omrecorder.Recorder;
 import com.example.spice.ui.model_decision.GenreClassifier;
 import com.github.mikephil.charting.data.BarEntry;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -78,6 +83,10 @@ public class AudioFragment extends Fragment {
 
     public AudioFragment() {
     }
+
+    private FirebaseAuth auth;
+    private DatabaseReference ref;
+    private String currentUserId;
 
     FFmpeg ffmpeg;
 
@@ -282,17 +291,56 @@ public class AudioFragment extends Fragment {
 
         Float classifyArray[] = new Float[]{0f,0f,0f,0f,0f,0f,0f,0f,0f,0f};
 
-        String classifyString;
+        auth = FirebaseAuth.getInstance();
+        FirebaseUser user = auth.getCurrentUser();
+        currentUserId = user.getUid();
+        ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
+
         if(map != null)
         {
             int i = 0;
             for (Float value : map.values())
             {
                 classifyArray[i] = value;
+                switch(i) {
+                    case 0:
+                        ref.child("Blues").setValue(String.valueOf(value));
+                        break;
+                    case 1:
+                        ref.child("Classical").setValue(String.valueOf(value));
+                        break;
+                    case 2:
+                        ref.child("Country").setValue(String.valueOf(value));
+                        break;
+                    case 3:
+                        ref.child("Disco").setValue(String.valueOf(value));
+                        break;
+                    case 4:
+                        ref.child("Hip-Hop").setValue(String.valueOf(value));
+                        break;
+                    case 5:
+                        ref.child("Jazz").setValue(String.valueOf(value));
+                        break;
+                    case 6:
+                        ref.child("Metal").setValue(String.valueOf(value));
+                        break;
+                    case 7:
+                        ref.child("Pop").setValue(String.valueOf(value));
+                        break;
+                    case 8:
+                        ref.child("Reggae").setValue(String.valueOf(value));
+                        break;
+                    case 9:
+                        ref.child("Rock").setValue(String.valueOf(value));
+                        break;
+                    default:
+                        break;
+                }
                 i++;
             }
         }
-        GraphsFragment newGraph = new GraphsFragment(classifyArray);
+
+        GraphsFragment newGraph = new GraphsFragment();
         showGenrePopUp(genreClassifier.getMaxProbabilityString());
 
 

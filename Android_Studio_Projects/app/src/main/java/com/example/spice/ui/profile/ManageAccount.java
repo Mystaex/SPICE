@@ -50,7 +50,6 @@ public class ManageAccount extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                Toast.makeText(ManageAccount.this, "Back Profile Page", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
@@ -84,8 +83,6 @@ public class ManageAccount extends AppCompatActivity
                     ref.child("genre").setValue(genreValue);
                 }
 
-                //let the user know their account editing process completed
-                Toast.makeText(ManageAccount.this, "Account Edited", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 finish();
             }
