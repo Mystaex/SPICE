@@ -106,7 +106,6 @@ public class GraphsFragment extends Fragment
 
         bar = (BarChart) view.findViewById(R.id.bar);
 
-
         Params();
     }
 
@@ -157,27 +156,6 @@ public class GraphsFragment extends Fragment
         legend.setEnabled(false);
 
         ArrayList<BarEntry> valueSet = new ArrayList<BarEntry>();
-
-
-        System.out.println(Blues);
-        System.out.println("SPACER");
-        System.out.println(Classical);
-        System.out.println("SPACER");
-        System.out.println(Country);
-        System.out.println("SPACER");
-        System.out.println(Disco);
-        System.out.println("SPACER");
-        System.out.println(HipHop);
-        System.out.println("SPACER");
-        System.out.println(Jazz);
-        System.out.println("SPACER");
-        System.out.println(Metal);
-        System.out.println("SPACER");
-        System.out.println(Pop);
-        System.out.println("SPACER");
-        System.out.println(Reggae);
-        System.out.println("SPACER");
-        System.out.println(Rock);
 
         if(Blues == null)
         {
