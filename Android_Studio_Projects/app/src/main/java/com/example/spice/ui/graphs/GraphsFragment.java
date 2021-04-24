@@ -26,11 +26,15 @@ import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Semaphore;
 
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.gms.tasks.TaskCompletionSource;
+import com.google.firebase.FirebaseError;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,6 +44,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.ktx.Firebase;
 
 
 public class GraphsFragment extends Fragment
@@ -51,16 +56,18 @@ public class GraphsFragment extends Fragment
     private String currentUserId = user.getUid();
     private DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
 
-    public String Blues;
-    public String Classical;
-    public String Country;
-    public String Disco;
-    public String HipHop;
-    public String Jazz;
-    public String Metal;
-    public String Pop;
-    public String Reggae;
-    public String Rock;
+    public String Blues = null;
+    public String Classical = null;
+    public String Country = null;
+    public String Disco = null;
+    public String HipHop = null;
+    public String Jazz = null;
+    public String Metal = null;
+    public String Pop = null;
+    public String Reggae = null;
+    public String Rock = null;
+
+    private ArrayList<String> categories = new ArrayList<String>();
 
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     public Float map[];
@@ -81,10 +88,6 @@ public class GraphsFragment extends Fragment
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        bar = (BarChart) view.findViewById(R.id.bar);
-        Params();
-        setData();
-
         super.onViewCreated(view, savedInstanceState);
     }
 
@@ -93,15 +96,18 @@ public class GraphsFragment extends Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view =inflater.inflate(R.layout.fragment_graphs,container,false);
+
         GroupBarChart(view);
+
         return view;
     }
 
-    public void GroupBarChart(View view){
+    public void GroupBarChart(View view) {
 
         bar = (BarChart) view.findViewById(R.id.bar);
+
+
         Params();
-        setData();
     }
 
     public void setData()
@@ -245,6 +251,7 @@ public class GraphsFragment extends Fragment
         bar.animateY(500);
     }
 
+
     public void Params()
     {
         currentUserId = user.getUid();
@@ -265,27 +272,7 @@ public class GraphsFragment extends Fragment
                 Pop = dataSnapshot.child("Pop").getValue().toString();
                 Reggae = dataSnapshot.child("Reggae").getValue().toString();
                 Rock = dataSnapshot.child("Rock").getValue().toString();
-
-                System.out.println(Blues);
-                System.out.println("----");
-                System.out.println(Classical);
-                System.out.println("----");
-                System.out.println(Country);
-                System.out.println("----");
-                System.out.println(Disco);
-                System.out.println("----");
-                System.out.println(HipHop);
-                System.out.println("----");
-                System.out.println(Jazz);
-                System.out.println("----");
-                System.out.println(Metal);
-                System.out.println("----");
-                System.out.println(Pop);
-                System.out.println("----");
-                System.out.println(Reggae);
-                System.out.println("----");
-                System.out.println(Rock);
-
+                setData();
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
@@ -293,6 +280,5 @@ public class GraphsFragment extends Fragment
             }
         });
     }
-
-
 }
+
