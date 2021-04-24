@@ -239,7 +239,6 @@ public class GraphsFragment extends Fragment
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
-                System.out.println("ATTENTION SUCCESS");
                 Blues = dataSnapshot.child("Blues").getValue().toString();
                 Classical = dataSnapshot.child("Classical").getValue().toString();
                 Country = dataSnapshot.child("Country").getValue().toString();
