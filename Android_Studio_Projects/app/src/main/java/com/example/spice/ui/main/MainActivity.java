@@ -19,6 +19,7 @@ import com.example.spice.R;
 import com.example.spice.ui.audio_submission.AudioFragment;
 import com.example.spice.ui.graphs.GraphsFragment;
 import com.example.spice.ui.login.login;
+import com.example.spice.ui.model_info.ModelFragment;
 import com.example.spice.ui.profile.ChangePassword;
 import com.example.spice.ui.profile.ManageAccount;
 import com.example.spice.ui.profile.ProfileFragment;
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 {
     //Here we initialize the tab variables that will be used for each fragment
     ColorStateList def;
-    TextView tab1, tab2, tab3, select;
+    TextView tab1, tab2, tab3, tab4, select;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,10 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tab1 = findViewById(R.id.tab1);
         tab2 = findViewById(R.id.tab2);
         tab3 = findViewById(R.id.tab3);
+        tab4 = findViewById(R.id.tab4);
 
         tab1.setOnClickListener(this);
         tab2.setOnClickListener(this);
         tab3.setOnClickListener(this);
+        tab4.setOnClickListener(this);
 
         select = findViewById(R.id.select);
         def = tab2.getTextColors();
@@ -157,9 +160,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tab1.setTextColor(Color.WHITE);
             tab2.setTextColor(def);
             tab3.setTextColor(def);
+            tab4.setTextColor(def);
 
             setFragment(AudioFragment.newInstance());
-
         }
         //The second tab is the Graphing page
         else if (view.getId() == R.id.tab2)
@@ -167,22 +170,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tab1.setTextColor(def);
             tab2.setTextColor(Color.WHITE);
             tab3.setTextColor(def);
+            tab4.setTextColor(def);
             int size = tab2.getWidth();
             select.animate().x(size).setDuration(100);
 
             setFragment(GraphsFragment.newInstance());
         }
-        //The third tab is the profile page
-        else if (view.getId() == R.id.tab3)
+        else if(view.getId() == R.id.tab3)
         {
             tab1.setTextColor(def);
             tab2.setTextColor(def);
             tab3.setTextColor(Color.WHITE);
+            tab4.setTextColor(def);
+            int size = tab2.getWidth();
+            select.animate().x(size).setDuration(100);
+
+            setFragment(ModelFragment.newInstance());
+        }
+        //The third tab is the profile page
+        else if (view.getId() == R.id.tab4)
+        {
+            tab1.setTextColor(def);
+            tab2.setTextColor(def);
+            tab3.setTextColor(def);
+            tab4.setTextColor(Color.WHITE);
             int size = tab2.getWidth() * 2;
             select.animate().x(size).setDuration(100);
 
             setFragment(ProfileFragment.newInstance());
-
         }
     }
 

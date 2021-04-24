@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_grey"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"
+        tools:context=".ui.graphs.GraphsFragment">
+
+
+
+        <TextView
+            android:id="@+id/graph_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Genre: "
+            android:textColor="@color/tvProfile"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/model_information_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:text=" Model information:\n  -Cost function for cross-validation data - 51%\n  -Accuracy of cross-validation data- 83%\n  -Structure - Dense Neural Network\n\n Model Complexity Information:\n  -Dense Layer - 512 nodes, .35 drop out\n  -Dense Layer - 256 nodes, .25 drop out\n  -Dense Layer - 128 nodes, .2 drop out\n  -Dense Layer - 64 nodes, .15 drop out\n  -Dense Layer - 32 nodes, .1 drop out\n  -Dense Layer - 10 nodes (output),\n   activation = softmax"
+            android:textColor="@color/tvProfile"
+            android:background="@drawable/ic_border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graph_genre" />
+
+        <TextView
+            android:id="@+id/model_conf_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:padding="20dp"
+            android:textColor="@color/tvProfile"
+            android:text="Model Configuration:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_information_text" />
+
+        <ImageView
+            android:id="@+id/model_conf_image"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            android:src="@drawable/model_conf"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_conf_text"
+            tools:layout_editor_absoluteX="141dp" />
+
+        <TextView
+            android:id="@+id/conf_matrix_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configuration Matrix:"
+            android:textColor="@color/tvProfile"
+            android:textSize="24sp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/model_conf_image"
+            tools:layout_editor_absoluteX="176dp" />
+
+        <ImageView
+            android:id="@+id/conf_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/conf_matrix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/conf_matrix_text"
+            tools:layout_editor_absoluteX="139dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

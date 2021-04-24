@@ -35,6 +35,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text=""/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=""/>
         </LinearLayout>
 
         <LinearLayout
@@ -57,8 +62,17 @@
                 android:textColor="@color/white"
                 android:text="@string/graph_label"
                 android:gravity="center"/>
+
             <TextView
                 android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Model"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tab4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
