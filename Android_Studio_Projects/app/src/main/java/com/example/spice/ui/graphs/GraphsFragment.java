@@ -95,11 +95,12 @@ public class GraphsFragment extends Fragment
         String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
         bar.setDrawBarShadow(false);
         bar.getDescription().setEnabled(false);
-        bar.setPinchZoom(false);
+        bar.setPinchZoom(true);
         bar.setDrawGridBackground(true);
-        bar.setDrawValueAboveBar(true);
+        bar.setDrawValueAboveBar(false);
         bar.setMaxVisibleValueCount(10);
         bar.setFitBars(true);
+        bar.getAxisLeft().setAxisMinimum(0f);
         XAxis xaxis = bar.getXAxis();
         xaxis.setDrawGridLines(true);
         xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -119,7 +120,7 @@ public class GraphsFragment extends Fragment
 
         YAxis leftAxis = bar.getAxisLeft();
         leftAxis.setTextColor(Color.WHITE);
-        leftAxis.setTextSize(8);
+        leftAxis.setTextSize(11);
         leftAxis.setAxisLineColor(Color.WHITE);
         leftAxis.setDrawGridLines(true);
         leftAxis.setGranularity(2);

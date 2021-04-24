@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Genre: "
+            android:text="Model Information: "
             android:textColor="@color/tvProfile"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"

@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tab2.setTextColor(def);
             tab3.setTextColor(Color.WHITE);
             tab4.setTextColor(def);
-            int size = tab2.getWidth();
+            int size = tab2.getWidth() * 2;
             select.animate().x(size).setDuration(100);
 
             setFragment(ModelFragment.newInstance());
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tab2.setTextColor(def);
             tab3.setTextColor(def);
             tab4.setTextColor(Color.WHITE);
-            int size = tab2.getWidth() * 2;
+            int size = tab2.getWidth() * 3;
             select.animate().x(size).setDuration(100);
 
             setFragment(ProfileFragment.newInstance());
