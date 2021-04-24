@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -24,6 +25,7 @@ import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.interfaces.datasets.IBarDataSet;
@@ -45,9 +47,9 @@ public class GraphsFragment extends Fragment
     BarChart bar;
 
     private FirebaseAuth auth;
-    private String currentUserId;
     private FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-    private DatabaseReference ref;
+    private String currentUserId = user.getUid();
+    private DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
 
     public String Blues;
     public String Classical;
@@ -63,7 +65,7 @@ public class GraphsFragment extends Fragment
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     public Float map[];
 
-    public GraphsFragment() { }
+    public GraphsFragment() {}
 
     public static GraphsFragment newInstance()
     {
@@ -77,6 +79,17 @@ public class GraphsFragment extends Fragment
     }
 
     @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
+        bar = (BarChart) view.findViewById(R.id.bar);
+        Params();
+        setData();
+
+        super.onViewCreated(view, savedInstanceState);
+    }
+
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
         View view =inflater.inflate(R.layout.fragment_graphs,container,false);
@@ -84,25 +97,23 @@ public class GraphsFragment extends Fragment
         return view;
     }
 
-
     public void GroupBarChart(View view){
 
         bar = (BarChart) view.findViewById(R.id.bar);
+        Params();
+        setData();
+    }
+
+    public void setData()
+    {
+        String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
         bar.setDrawBarShadow(false);
         bar.getDescription().setEnabled(false);
         bar.setPinchZoom(false);
         bar.setDrawGridBackground(true);
         bar.setDrawValueAboveBar(true);
         bar.setMaxVisibleValueCount(10);
-
-        setData();
         bar.setFitBars(true);
-    }
-
-    public void setData()
-    {
-        String[] labels = {"Blues", "Classical", "Country", "Disco", "Hip-Hop", "Jazz", "Metal", "Pop", "Reggae", "Rock"};
-
         XAxis xaxis = bar.getXAxis();
         xaxis.setDrawGridLines(true);
         xaxis.setPosition(XAxis.XAxisPosition.BOTTOM);
@@ -141,82 +152,73 @@ public class GraphsFragment extends Fragment
 
         ArrayList<BarEntry> valueSet = new ArrayList<BarEntry>();
 
-        BarEntry entry = new BarEntry(0, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(1, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(2, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(3, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(4, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(5, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(6, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(7, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(8, 0);
-        valueSet.add(entry);
-        entry = new BarEntry(9, 0);
-        valueSet.add(entry);
 
-        /*
+        System.out.println(Blues);
+        System.out.println("SPACER");
+        System.out.println(Classical);
+        System.out.println("SPACER");
+        System.out.println(Country);
+        System.out.println("SPACER");
+        System.out.println(Disco);
+        System.out.println("SPACER");
+        System.out.println(HipHop);
+        System.out.println("SPACER");
+        System.out.println(Jazz);
+        System.out.println("SPACER");
+        System.out.println(Metal);
+        System.out.println("SPACER");
+        System.out.println(Pop);
+        System.out.println("SPACER");
+        System.out.println(Reggae);
+        System.out.println("SPACER");
+        System.out.println(Rock);
 
-        currentUserId = user.getUid();
-        FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph")
-                .addValueEventListener(new ValueEventListener()
-                {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot)
-                    {
-                        Blues = dataSnapshot.child("Blues").getValue().toString();
-                        Classical = dataSnapshot.child("Classical").getValue().toString();
-                        Country = dataSnapshot.child("Country").getValue().toString();
-                        Disco = dataSnapshot.child("Disco").getValue().toString();
-                        HipHop = dataSnapshot.child("Hip-Hop").getValue().toString();
-                        Jazz = dataSnapshot.child("Jazz").getValue().toString();
-                        Metal = dataSnapshot.child("Metal").getValue().toString();
-                        Pop = dataSnapshot.child("Pop").getValue().toString();
-                        Reggae = dataSnapshot.child("Reggae").getValue().toString();
-                        Rock = dataSnapshot.child("Rock").getValue().toString();
-                        System.out.print(Blues);
-                        System.out.print(Blues);
-                        System.out.print(Blues);
-                        System.out.print(Blues);
-                        System.out.print(Blues);
-                        System.out.print(Blues);
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError)
-                    {
-                    }
-                });
-
-        BarEntry entry = new BarEntry(0, Float.valueOf(Blues)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(1, Float.valueOf(Classical)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(2, Float.valueOf(Country)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(3, Float.valueOf(Disco)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(4, Float.valueOf(HipHop)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(5, Float.valueOf(Jazz)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(6, Float.valueOf(Metal)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(7, Float.valueOf(Pop)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(8, Float.valueOf(Reggae)*100);
-        valueSet.add(entry);
-        entry = new BarEntry(9, Float.valueOf(Rock)*100);
-        valueSet.add(entry);
-
-         */
+        if(Blues == null)
+        {
+            BarEntry entry = new BarEntry(0, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(1, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(2, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(3, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(4, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(5, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(6, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(7, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(8, 0);
+            valueSet.add(entry);
+            entry = new BarEntry(9, 0);
+            valueSet.add(entry);
+        }
+        else
+        {
+            BarEntry entry = new BarEntry(0, Float.valueOf(Blues)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(1, Float.valueOf(Classical)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(2, Float.valueOf(Country)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(3, Float.valueOf(Disco)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(4, Float.valueOf(HipHop)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(5, Float.valueOf(Jazz)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(6, Float.valueOf(Metal)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(7, Float.valueOf(Pop)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(8, Float.valueOf(Reggae)*100);
+            valueSet.add(entry);
+            entry = new BarEntry(9, Float.valueOf(Rock)*100);
+            valueSet.add(entry);
+        }
 
 
         List<IBarDataSet> dataSets = new ArrayList<>();
@@ -243,75 +245,54 @@ public class GraphsFragment extends Fragment
         bar.animateY(500);
     }
 
-    /*
+    public void Params()
+    {
+        currentUserId = user.getUid();
+        FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph")
+        .addValueEventListener(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot)
+            {
+                System.out.println("ATTENTION SUCCESS");
+                Blues = dataSnapshot.child("Blues").getValue().toString();
+                Classical = dataSnapshot.child("Classical").getValue().toString();
+                Country = dataSnapshot.child("Country").getValue().toString();
+                Disco = dataSnapshot.child("Disco").getValue().toString();
+                HipHop = dataSnapshot.child("Hip-Hop").getValue().toString();
+                Jazz = dataSnapshot.child("Jazz").getValue().toString();
+                Metal = dataSnapshot.child("Metal").getValue().toString();
+                Pop = dataSnapshot.child("Pop").getValue().toString();
+                Reggae = dataSnapshot.child("Reggae").getValue().toString();
+                Rock = dataSnapshot.child("Rock").getValue().toString();
 
-    public void GroupBarChart(View view){
-        bar = (BarChart) view.findViewById(R.id.bar);
-        bar.setDrawBarShadow(false);
-        bar.getDescription().setEnabled(false);
-        bar.setPinchZoom(false);
-        bar.setDrawGridBackground(true);
-        // empty labels so that the names are spread evenly
-        String[] labels = {"", "Classical", "Rock", "Reggae", "Hip-hop", "Pop", ""};
-        XAxis xAxis = bar.getXAxis();
-        xAxis.setCenterAxisLabels(true);
-        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
-        xAxis.setDrawGridLines(true);
-        xAxis.setGranularity(1f); // only intervals of 1 day
-        xAxis.setTextColor(Color.WHITE);
-        xAxis.setTextSize(12);
-        xAxis.setAxisLineColor(Color.WHITE);
-        xAxis.setAxisMinimum(1f);
-        xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
+                System.out.println(Blues);
+                System.out.println("----");
+                System.out.println(Classical);
+                System.out.println("----");
+                System.out.println(Country);
+                System.out.println("----");
+                System.out.println(Disco);
+                System.out.println("----");
+                System.out.println(HipHop);
+                System.out.println("----");
+                System.out.println(Jazz);
+                System.out.println("----");
+                System.out.println(Metal);
+                System.out.println("----");
+                System.out.println(Pop);
+                System.out.println("----");
+                System.out.println(Reggae);
+                System.out.println("----");
+                System.out.println(Rock);
 
-        YAxis leftAxis = bar.getAxisLeft();
-        leftAxis.setTextColor(Color.WHITE);
-        leftAxis.setTextSize(12);
-        leftAxis.setAxisLineColor(Color.WHITE);
-        leftAxis.setDrawGridLines(true);
-        leftAxis.setGranularity(2);
-        leftAxis.setLabelCount(8, true);
-        leftAxis.setPosition(YAxis.YAxisLabelPosition.OUTSIDE_CHART);
-
-        bar.getAxisRight().setEnabled(false);
-        bar.getLegend().setEnabled(false);
-
-        float[] valOne = {10, 20, 30, 40, 50};
-
-        ArrayList<BarEntry> barOne = new ArrayList<>();
-        ArrayList<BarEntry> barTwo = new ArrayList<>();
-        for (int i = 0; i < valOne.length; i++) {
-            barOne.add(new BarEntry(i, valOne[i]));
-        }
-
-        BarDataSet set1 = new BarDataSet(barOne, "barOne");
-        set1.setColor(Color.RED);
-        BarDataSet set2 = new BarDataSet(barTwo, "barTwo");
-        set2.setColor(Color.BLUE);
-
-        set1.setHighlightEnabled(false);
-        set2.setHighlightEnabled(false);
-        set1.setDrawValues(false);
-        set2.setDrawValues(false);
-
-        ArrayList<IBarDataSet> dataSets = new ArrayList<IBarDataSet>();
-        dataSets.add(set1);
-        dataSets.add(set2);
-        BarData data = new BarData(dataSets);
-        float groupSpace = 0.4f;
-        float barSpace = 0f;
-        float barWidth = 0.3f;
-        // (barSpace + barWidth) * 2 + groupSpace = 1
-        data.setBarWidth(barWidth);
-        // so that the entire chart is shown when scrolled from right to left
-        xAxis.setAxisMaximum(labels.length - 1.1f);
-        bar.setData(data);
-        bar.setScaleEnabled(false);
-        bar.setVisibleXRangeMaximum(6f);
-        bar.groupBars(1f, groupSpace, barSpace);
-        bar.invalidate();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError)
+            {
+            }
+        });
     }
 
- */
 
 }

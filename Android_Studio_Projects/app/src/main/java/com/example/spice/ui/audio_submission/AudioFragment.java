@@ -75,6 +75,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -87,6 +89,8 @@ public class AudioFragment extends Fragment {
     private FirebaseAuth auth;
     private DatabaseReference ref;
     private String currentUserId;
+
+    private static DecimalFormat df = new DecimalFormat("0.00");
 
     FFmpeg ffmpeg;
 
@@ -296,6 +300,7 @@ public class AudioFragment extends Fragment {
         currentUserId = user.getUid();
         ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
 
+
         if(map != null)
         {
             int i = 0;
@@ -304,34 +309,34 @@ public class AudioFragment extends Fragment {
                 classifyArray[i] = value;
                 switch(i) {
                     case 0:
-                        ref.child("Blues").setValue(String.valueOf(value));
+                        ref.child("Blues").setValue(String.valueOf(df.format(value)));
                         break;
                     case 1:
-                        ref.child("Classical").setValue(String.valueOf(value));
+                        ref.child("Classical").setValue(String.valueOf(df.format(value)));
                         break;
                     case 2:
-                        ref.child("Country").setValue(String.valueOf(value));
+                        ref.child("Country").setValue(String.valueOf(df.format(value)));
                         break;
                     case 3:
-                        ref.child("Disco").setValue(String.valueOf(value));
+                        ref.child("Disco").setValue(String.valueOf(df.format(value)));
                         break;
                     case 4:
-                        ref.child("Hip-Hop").setValue(String.valueOf(value));
+                        ref.child("Hip-Hop").setValue(String.valueOf(df.format(value)));
                         break;
                     case 5:
-                        ref.child("Jazz").setValue(String.valueOf(value));
+                        ref.child("Jazz").setValue(String.valueOf(df.format(value)));
                         break;
                     case 6:
-                        ref.child("Metal").setValue(String.valueOf(value));
+                        ref.child("Metal").setValue(String.valueOf(df.format(value)));
                         break;
                     case 7:
-                        ref.child("Pop").setValue(String.valueOf(value));
+                        ref.child("Pop").setValue(String.valueOf(df.format(value)));
                         break;
                     case 8:
-                        ref.child("Reggae").setValue(String.valueOf(value));
+                        ref.child("Reggae").setValue(String.valueOf(df.format(value)));
                         break;
                     case 9:
-                        ref.child("Rock").setValue(String.valueOf(value));
+                        ref.child("Rock").setValue(String.valueOf(df.format(value)));
                         break;
                     default:
                         break;
@@ -341,6 +346,8 @@ public class AudioFragment extends Fragment {
         }
 
         GraphsFragment newGraph = new GraphsFragment();
+        // = getSupportFragmentManager().findFragmentById(R.id.base_container);
+
         showGenrePopUp(genreClassifier.getMaxProbabilityString());
 
 
