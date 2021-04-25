@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="16sp"
-            android:text=" Model information:\n  -Cost function for cross-validation data - 51%\n  -Accuracy of cross-validation data- 83%\n  -Structure - Dense Neural Network\n\n Model Complexity Information:\n  -Dense Layer - 512 nodes, .35 drop out\n  -Dense Layer - 256 nodes, .25 drop out\n  -Dense Layer - 128 nodes, .2 drop out\n  -Dense Layer - 64 nodes, .15 drop out\n  -Dense Layer - 32 nodes, .1 drop out\n  -Dense Layer - 10 nodes (output),\n   activation = softmax"
+            android:text=" Model information:\n  -Cost function for cross-validation data - .51\n  -Accuracy of cross-validation data- 83%\n  -Structure - Dense Neural Network\n\n Model Complexity Information:\n  -Dense Layer - 512 nodes, .35 drop out\n  -Dense Layer - 256 nodes, .25 drop out\n  -Dense Layer - 128 nodes, .2 drop out\n  -Dense Layer - 64 nodes, .15 drop out\n  -Dense Layer - 32 nodes, .1 drop out\n  -Dense Layer - 10 nodes (output),\n   activation = softmax"
             android:textColor="@color/tvProfile"
             android:background="@drawable/ic_border"
             app:layout_constraintEnd_toEndOf="parent"

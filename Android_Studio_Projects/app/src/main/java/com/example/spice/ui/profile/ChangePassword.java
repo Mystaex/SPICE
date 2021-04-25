@@ -112,6 +112,12 @@ public class ChangePassword extends AppCompatActivity
                 String oldpasswordValue = mOld.getEditText().getText().toString().trim();
                 String emailValue = mEmail.getEditText().getText().toString().trim();
 
+                //setting all errors to be blank again before setting any more errors
+                mPasswordConfirm.setError(null);
+                mPassword.setError(null);
+                mOld.setError(null);
+                mEmail.setError(null);
+
                 //EMAIL DOES NOT MATCH THE CURRENT EMAIL
                 if (!retrievedEmail.equals(emailValue))
                 {

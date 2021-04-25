@@ -293,20 +293,17 @@ public class AudioFragment extends Fragment {
         GenreClassifier genreClassifier = new GenreClassifier(getContext());
         Map<String, Float> map = genreClassifier.predict(features);
 
-        Float classifyArray[] = new Float[]{0f,0f,0f,0f,0f,0f,0f,0f,0f,0f};
 
         auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
         currentUserId = user.getUid();
         ref = FirebaseDatabase.getInstance().getReference().child("Member").child(currentUserId).child("Graph");
 
-
         if(map != null)
         {
             int i = 0;
             for (Float value : map.values())
             {
-                classifyArray[i] = value;
                 switch(i) {
                     case 0:
                         ref.child("Blues").setValue(String.valueOf(df.format(value)));

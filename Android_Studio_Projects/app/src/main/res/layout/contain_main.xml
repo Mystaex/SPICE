@@ -16,7 +16,8 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:background="#575757"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <TextView
                 android:layout_width="match_parent"
@@ -24,7 +25,8 @@
                 android:id="@+id/select"
                 android:layout_weight="1"
                 android:text=""
-                android:background="@drawable/back_select"/>
+                android:background="@drawable/back_select"
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,7 +47,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -75,6 +75,11 @@ public class Signup extends AppCompatActivity
                 String passwordConfirmValue = mPasswordConfirm.getEditText().getText().toString().trim();
                 String utaidValue = mUtaid.getEditText().getText().toString().trim();
 
+                //setting all errors to be blank again before setting any more errors
+                mEmail.setError(null);
+                mPasswordConfirm.setError(null);
+                mUtaid.setError(null);
+
                 //EMPTY EMAIL
                 if(TextUtils.isEmpty(emailValue))
                 {

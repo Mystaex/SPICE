@@ -85,6 +85,10 @@ public class login extends AppCompatActivity
                 String emailValue = mEmail.getEditText().getText().toString().trim();
                 String passwordValue = mPassword.getEditText().getText().toString().trim();
 
+                //setting all errors to be blank again before setting any more errors
+                mEmail.setError(null);
+                mPassword.setError(null);
+
                 //EMAIL EMPTY
                 if(TextUtils.isEmpty(emailValue))
                 {
